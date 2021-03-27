@@ -232,6 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gira: {fileID: 869255182}
+  speed: 0.05
 --- !u!4 &869255182 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 445937cc7dfc6324090c8e40d95f60f2,
