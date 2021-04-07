@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
-public class ControleSons : MonoBehaviour
+public class ControleUI : MonoBehaviour
 {
     public Slider sliderMusic, sliderUI, sliderSFX,sliderGeral;
     public AudioMixer mixer;
+    public string cena;
+    public GameObject tela;
     void Start()
     {
         
@@ -28,5 +31,17 @@ public class ControleSons : MonoBehaviour
     public void AllChange()
     {
         mixer.SetFloat("MasterVolume", sliderGeral.value);
+    }
+    public void ChangeScene()
+    {
+        SceneManager.LoadScene("cena");
+    }
+    public void Open()
+    {
+        tela.SetActive(true);
+    }
+    public void Close()
+    {
+        tela.SetActive(false);
     }
 }
