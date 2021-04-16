@@ -5,23 +5,33 @@ using UnityEngine;
 public class Pista : MonoBehaviour
 {
     public Transform gira;
-    private float speed = 0.3f;
+    public float speed = 0.001f;
     Vector3 dir = new Vector3(0.0f, 0.0f, 45.0f);
-    void Start()
+    Vector3 goalRotation = new Vector3(70, 90, -90);
+    Vector3 rotation = new Vector3(45f, 0, 0);
+    public Transform conector;
+
+    private void OnEnable()
     {
-        
+
+    }
+    private void OnDisable()
+    {
+        Procedural.procedural.PoolPista.Add(this);
     }
 
-    
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            gira.rotation = Quaternion.Euler(0, 90, -90 );
+            goalRotation -= rotation;
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
-            gira.Rotate(0.0f, 0.0f, -45.0f, Space.World);
+            goalRotation += rotation;
+            // gira.Rotate(0.0f, 0.0f, -45.0f, Space.World);
         }
+        gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(goalRotation), Time.time * speed);
     }
 }
