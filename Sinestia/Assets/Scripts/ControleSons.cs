@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
-public class ControleUI : MonoBehaviour
+public class ControleSons: MonoBehaviour
 {
     public Slider sliderMusic, sliderUI, sliderSFX,sliderGeral;
     public AudioMixer mixer;
