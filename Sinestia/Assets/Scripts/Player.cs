@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -9,13 +10,15 @@ public class Player : MonoBehaviour
     public Transform alvo;
     float speed = 10;
     int vida = 0;
+    public GameObject Escudo;
     void Start()
     {
         InvokeRepeating("movimenta", 0, 0.05f);
-        InvokeRepeating("Viver", 0, 1.0f);
+        
     }
     void Update()
     {
+        Viver();
         
     }
 
@@ -30,7 +33,11 @@ public class Player : MonoBehaviour
     {
         if (vida <= 0)
         {
-            Destroy(gameObject);
+            SceneManager.LoadScene("GameOver");
+        }
+        if (alvo.position.y < -5.8)
+        {
+            SceneManager.LoadScene("GameOver");
         }
     }
     void OnCollisionEnter(Collision outro)
@@ -45,5 +52,21 @@ public class Player : MonoBehaviour
                 vida = vida;
             }
         }
+        if (outro.gameObject.CompareTag("Escudo"))
+        {
+            for (int x = 0; x < 10; x++) Escudo.SetActive(true);
+        }
+        if (outro.gameObject.CompareTag("Obstaculo"))
+        {
+            vida--;
+        }
+    }
+    void Pulo()
+    {
+
+    }
+    void Deslizar()
+    {
+
     }
 }

@@ -5,15 +5,15 @@ using UnityEngine.UI;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
-public class ControleSons: MonoBehaviour
+public class ControleUI : MonoBehaviour
 {
-    public Slider sliderMusic, sliderUI, sliderSFX,sliderGeral;
+    public Slider sliderMusic, sliderUI, sliderSFX, sliderGeral;
     public AudioMixer mixer;
     public string cena;
     public GameObject tela;
     void Start()
     {
-        
+
     }
 
     public void SfxCnhage()
@@ -43,5 +43,15 @@ public class ControleSons: MonoBehaviour
     public void Close()
     {
         tela.SetActive(false);
+    }
+    public void Pausa()
+    {
+        tela.SetActive(true);
+        Time.timeScale = 0;
+    }
+    public void DesPausa()
+    {
+        tela.SetActive(false);
+        Time.timeScale = 1;
     }
 }
