@@ -1,16 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ControleHUD : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Image vida;
+    public Text pontos;
+    static public ControleHUD controleHUD;
+
+    public void Vida(float vidaPlayer)
     {
-        
+        vida.fillAmount = vidaPlayer/3.0f;
     }
 
-    // Update is called once per frame
+    public void Pontos(int pontosPlayer)
+    {
+        pontos.text = pontosPlayer.ToString();
+    }
+
+    void Awake()
+    {
+        controleHUD = this;
+    }
+
+    
     void Update()
     {
         
