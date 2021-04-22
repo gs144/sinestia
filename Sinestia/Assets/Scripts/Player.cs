@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    static public Player player;
     Vector3 anda = Vector3.forward;
     int cont;
     public Transform alvo;
@@ -15,6 +16,7 @@ public class Player : MonoBehaviour
 
     void Awake()
     {
+        player = this;
         ControleHUD.controleHUD.Vida(vida);
         ControleHUD.controleHUD.Pontos(pontos);
     }
