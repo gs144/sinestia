@@ -5,10 +5,9 @@ using UnityEngine;
 public class Pista : MonoBehaviour
 {
     public Transform gira;
-    public float speed = 0.001f;
-    Vector3 dir = new Vector3(0.0f, 0.0f, 45.0f);
-    Vector3 goalRotation = new Vector3(70, 90, -90);
-    Vector3 rotation = new Vector3(45f, 0, 0);
+    public float speed = 0.01f;
+    Vector3 goalRotation = new Vector3(0, 0, 0);
+    Vector3 rotation = new Vector3(0, 0, 45.0f);
     public Transform conector;
 
     private void OnEnable()
