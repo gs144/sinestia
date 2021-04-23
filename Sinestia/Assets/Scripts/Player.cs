@@ -17,13 +17,12 @@ public class Player : MonoBehaviour
     void Awake()
     {
         player = this;
-        ControleHUD.controleHUD.Vida(vida);
-        ControleHUD.controleHUD.Pontos(pontos);
+        
     }
     void Start()
     {
         InvokeRepeating("movimenta", 0, 0.05f);
-        
+        Invoke("StartHUD", 1);
     }
     void Update()
     {
@@ -126,5 +125,10 @@ public class Player : MonoBehaviour
             }
             ControleHUD.controleHUD.Pontos(pontos);
         }
+    }
+    void StartHUD()
+    {
+        ControleHUD.controleHUD.Vida(vida);
+        ControleHUD.controleHUD.Pontos(pontos);
     }
 }

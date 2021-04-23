@@ -9,7 +9,7 @@ public class ControleHUD : MonoBehaviour
     public Text pontos;
     static public ControleHUD controleHUD;
 
-    public void Vida(float vidaPlayer)
+    public void Vida(int vidaPlayer)
     {
         vida.fillAmount = vidaPlayer/3.0f;
     }
