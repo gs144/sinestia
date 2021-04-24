@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         InvokeRepeating("movimenta", 0, 0.05f);
-        Invoke("StartHUD", 1);
+        Invoke("StartHUD", 0.5f);
     }
     void Update()
     {
