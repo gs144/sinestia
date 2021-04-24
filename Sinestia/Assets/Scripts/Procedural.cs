@@ -43,7 +43,7 @@ public class Procedural : MonoBehaviour
     }
     void Start()
     {
-
+        PistaInicial();
     }
 
 

@@ -3533,10 +3533,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5ccc0bc03c313c46a88b1044bd4f8f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tamanhoPista: 0
-  ListaPecas: []
+  tamanhoPista: 9
+  ListaPecas:
+  - {fileID: 8070249118875840278, guid: 2ee324db816c89245ad30a38e083efd9, type: 3}
+  - {fileID: 1301072624818104957, guid: d7700e98e0b55c94fba3ef505a1ccaa3, type: 3}
+  - {fileID: 1248706061446944250, guid: f34d68ddeea42e0439822ad4e15e52a0, type: 3}
+  - {fileID: 2648283753191634817, guid: 659e3361df633924e877ae19e5e4c850, type: 3}
+  - {fileID: 6914803067198703947, guid: 0242a917b3251504683a3e5ad48ab807, type: 3}
+  - {fileID: 1398344399678810938, guid: a26b4841bbfc9304d854d70c17486c35, type: 3}
+  - {fileID: 5727077920396160434, guid: 7eb45411dea41064f86c217679200e83, type: 3}
+  - {fileID: 8359358675865744989, guid: a355ec0d4e1cea345830c20d578b03d8, type: 3}
+  - {fileID: 3668672679716468417, guid: f910bd4b11ca3004f956da1de3715eec, type: 3}
   PoolPista: []
-  tamanhoPool: 0
+  tamanhoPool: 6
 --- !u!4 &1926843679
 Transform:
   m_ObjectHideFlags: 0
