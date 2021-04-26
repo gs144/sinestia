@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.29359615, y: 0.78645295}
   m_AnchorMax: {x: 0.70661545, y: 0.9532736}
-  m_AnchoredPosition: {x: 0.40000153, y: 0.5699695}
+  m_AnchoredPosition: {x: 0.3999939, y: 0.5699768}
   m_SizeDelta: {x: 0.58743286, y: 0.6396332}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &31543816
@@ -310,6 +310,7 @@ GameObject:
   - component: {fileID: 213772287}
   - component: {fileID: 213772286}
   - component: {fileID: 213772285}
+  - component: {fileID: 213772288}
   m_Layer: 5
   m_Name: Sim
   m_TagString: Untagged
@@ -333,7 +334,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.36800003, y: 0.457453}
   m_AnchorMax: {x: 0.615, y: 0.5551794}
-  m_AnchoredPosition: {x: 1.1803017, y: 0.39000034}
+  m_AnchoredPosition: {x: 1.1802979, y: 0.3899994}
   m_SizeDelta: {x: 0.03353882, y: -0.020030975}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &213772285
@@ -378,7 +379,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 213772286}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 213772288}
+        m_MethodName: ChangeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &213772286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,6 +428,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213772283}
   m_CullTransparentMesh: 0
+--- !u!114 &213772288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213772283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 0}
+  sliderUI: {fileID: 0}
+  sliderSFX: {fileID: 0}
+  sliderGeral: {fileID: 0}
+  mixer: {fileID: 0}
+  cena: Main Menu
+  tela: {fileID: 0}
 --- !u!1 &235780118
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 235780119}
   - component: {fileID: 235780120}
+  - component: {fileID: 235780121}
   m_Layer: 5
   m_Name: Slider Geral
   m_TagString: Untagged
@@ -503,7 +535,37 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 235780121}
+        m_MethodName: AllChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &235780121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235780118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 0}
+  sliderUI: {fileID: 0}
+  sliderSFX: {fileID: 0}
+  sliderGeral: {fileID: 235780120}
+  mixer: {fileID: 24100000, guid: a2a32e2b1d4cdd5459fb736ebf7c6756, type: 2}
+  cena: 
+  tela: {fileID: 0}
 --- !u!1 &289168731
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,7 +604,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0001296997}
+  m_AnchoredPosition: {x: 0, y: 0.00012207031}
   m_SizeDelta: {x: 0, y: -0.00024414062}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &289168733
@@ -863,7 +925,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &486785799
 Transform:
   m_ObjectHideFlags: 0
@@ -966,8 +1028,9 @@ GameObject:
   - component: {fileID: 635300476}
   - component: {fileID: 635300480}
   - component: {fileID: 635300479}
-  - component: {fileID: 635300478}
   - component: {fileID: 635300477}
+  - component: {fileID: 635300478}
+  - component: {fileID: 635300481}
   m_Layer: 5
   m_Name: "Configura\xE7\xF5es"
   m_TagString: Untagged
@@ -991,7 +1054,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.38500002, y: 0.28430435}
   m_AnchorMax: {x: 0.615, y: 0.37134784}
-  m_AnchoredPosition: {x: 0, y: 0.099998474}
+  m_AnchoredPosition: {x: 0, y: 0.1000061}
   m_SizeDelta: {x: 0.8503418, y: 0.3469162}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &635300477
@@ -1132,7 +1195,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 635300479}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 635300481}
+        m_MethodName: Open
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &635300479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1170,6 +1244,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 635300475}
   m_CullTransparentMesh: 0
+--- !u!114 &635300481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635300475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 0}
+  sliderUI: {fileID: 0}
+  sliderSFX: {fileID: 0}
+  sliderGeral: {fileID: 0}
+  mixer: {fileID: 0}
+  cena: 
+  tela: {fileID: 2124882671}
 --- !u!1 &784300790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,6 +1275,7 @@ GameObject:
   - component: {fileID: 784300794}
   - component: {fileID: 784300793}
   - component: {fileID: 784300792}
+  - component: {fileID: 784300795}
   m_Layer: 5
   m_Name: Pausar
   m_TagString: Untagged
@@ -1250,7 +1344,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 784300793}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 784300795}
+        m_MethodName: Pausa
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &784300793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1288,6 +1393,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784300790}
   m_CullTransparentMesh: 0
+--- !u!114 &784300795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784300790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 0}
+  sliderUI: {fileID: 0}
+  sliderSFX: {fileID: 0}
+  sliderGeral: {fileID: 0}
+  mixer: {fileID: 0}
+  cena: 
+  tela: {fileID: 1290403001}
 --- !u!1 &820586939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,7 +1520,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.29359615, y: 0.78645295}
   m_AnchorMax: {x: 0.70661545, y: 0.9532736}
-  m_AnchoredPosition: {x: 0.40000153, y: -5.28}
+  m_AnchoredPosition: {x: 0.3999939, y: -5.279999}
   m_SizeDelta: {x: 0.58743286, y: 12.338516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &841792674
@@ -1626,7 +1750,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.22638464, y: 0.483}
   m_AnchorMax: {x: 0.2861923, y: 0.55954707}
-  m_AnchoredPosition: {x: 0.05000305, y: 0.20000076}
+  m_AnchoredPosition: {x: 0.049987793, y: 0.20000076}
   m_SizeDelta: {x: -0.49508667, y: -0.47717285}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &902726150
@@ -1779,7 +1903,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.22638464, y: 0.700453}
   m_AnchorMax: {x: 0.77380776, y: 0.791}
-  m_AnchoredPosition: {x: 0.49999237, y: 0.32799911}
+  m_AnchoredPosition: {x: 0.5, y: 0.32800293}
   m_SizeDelta: {x: 0.4672699, y: 0.60684204}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &907861947
@@ -1918,6 +2042,7 @@ GameObject:
   - component: {fileID: 1040279284}
   - component: {fileID: 1040279283}
   - component: {fileID: 1040279282}
+  - component: {fileID: 1040279285}
   - component: {fileID: 1040279281}
   m_Layer: 5
   m_Name: Voltar
@@ -2083,7 +2208,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1040279283}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1040279285}
+        m_MethodName: DesPausa
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1040279283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2121,6 +2257,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1040279279}
   m_CullTransparentMesh: 0
+--- !u!114 &1040279285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040279279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 0}
+  sliderUI: {fileID: 0}
+  sliderSFX: {fileID: 0}
+  sliderGeral: {fileID: 0}
+  mixer: {fileID: 0}
+  cena: 
+  tela: {fileID: 1290403001}
 --- !u!1 &1067802254
 GameObject:
   m_ObjectHideFlags: 0
@@ -2132,8 +2287,9 @@ GameObject:
   - component: {fileID: 1067802255}
   - component: {fileID: 1067802259}
   - component: {fileID: 1067802258}
-  - component: {fileID: 1067802257}
   - component: {fileID: 1067802256}
+  - component: {fileID: 1067802257}
+  - component: {fileID: 1067802260}
   m_Layer: 5
   m_Name: Voltar
   m_TagString: Untagged
@@ -2298,7 +2454,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1067802258}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1067802260}
+        m_MethodName: Close
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1067802258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2336,6 +2503,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067802254}
   m_CullTransparentMesh: 0
+--- !u!114 &1067802260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067802254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 0}
+  sliderUI: {fileID: 0}
+  sliderSFX: {fileID: 0}
+  sliderGeral: {fileID: 0}
+  mixer: {fileID: 0}
+  cena: 
+  tela: {fileID: 2124882671}
 --- !u!1 &1123749851
 GameObject:
   m_ObjectHideFlags: 0
@@ -2710,6 +2896,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1329956936}
   - component: {fileID: 1329956937}
+  - component: {fileID: 1329956938}
   m_Layer: 5
   m_Name: Slider UI
   m_TagString: Untagged
@@ -2735,7 +2922,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.50845295}
   m_AnchorMax: {x: 0.7644039, y: 0.57245296}
-  m_AnchoredPosition: {x: 0.0000076293945, y: -0.20000076}
+  m_AnchoredPosition: {x: 0, y: -0.20000076}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1329956937
@@ -2787,7 +2974,37 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1329956938}
+        m_MethodName: UiChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1329956938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329956935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 0}
+  sliderUI: {fileID: 1329956937}
+  sliderSFX: {fileID: 0}
+  sliderGeral: {fileID: 0}
+  mixer: {fileID: 24100000, guid: a2a32e2b1d4cdd5459fb736ebf7c6756, type: 2}
+  cena: 
+  tela: {fileID: 0}
 --- !u!1 &1375417021
 GameObject:
   m_ObjectHideFlags: 0
@@ -2953,13 +3170,13 @@ GameObject:
   - component: {fileID: 1385002132}
   - component: {fileID: 1385002131}
   - component: {fileID: 1385002130}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1385002130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3060,6 +3277,7 @@ GameObject:
   - component: {fileID: 1454565543}
   - component: {fileID: 1454565542}
   - component: {fileID: 1454565541}
+  - component: {fileID: 1454565544}
   m_Layer: 5
   m_Name: Menu Principal
   m_TagString: Untagged
@@ -3083,7 +3301,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.36800003, y: 0.5128206}
   m_AnchorMax: {x: 0.6295962, y: 0.60200006}
-  m_AnchoredPosition: {x: 0.5, y: -0.30013752}
+  m_AnchoredPosition: {x: 0.5, y: -0.30013657}
   m_SizeDelta: {x: -1.3270569, y: -0.8113251}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1454565541
@@ -3128,7 +3346,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1454565542}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1454565544}
+        m_MethodName: Open
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1454565542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3166,6 +3395,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1454565539}
   m_CullTransparentMesh: 0
+--- !u!114 &1454565544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454565539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 0}
+  sliderUI: {fileID: 0}
+  sliderSFX: {fileID: 0}
+  sliderGeral: {fileID: 0}
+  mixer: {fileID: 0}
+  cena: 
+  tela: {fileID: 77269984}
 --- !u!1 &1550476023
 GameObject:
   m_ObjectHideFlags: 0
@@ -3212,6 +3460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1566298397}
   - component: {fileID: 1566298398}
+  - component: {fileID: 1566298399}
   m_Layer: 5
   m_Name: "Slider M\xFAsica"
   m_TagString: Untagged
@@ -3237,7 +3486,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.38045302}
   m_AnchorMax: {x: 0.7644039, y: 0.44900003}
-  m_AnchoredPosition: {x: 0.0000076293945, y: 0.099998474}
+  m_AnchoredPosition: {x: 0, y: 0.099998474}
   m_SizeDelta: {x: 0, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1566298398
@@ -3289,7 +3538,37 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1566298399}
+        m_MethodName: MusicChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1566298399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566298396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 1566298398}
+  sliderUI: {fileID: 0}
+  sliderSFX: {fileID: 0}
+  sliderGeral: {fileID: 0}
+  mixer: {fileID: 24100000, guid: a2a32e2b1d4cdd5459fb736ebf7c6756, type: 2}
+  cena: 
+  tela: {fileID: 0}
 --- !u!1 &1642349470
 GameObject:
   m_ObjectHideFlags: 0
@@ -3545,7 +3824,7 @@ MonoBehaviour:
   - {fileID: 8359358675865744989, guid: a355ec0d4e1cea345830c20d578b03d8, type: 3}
   - {fileID: 3668672679716468417, guid: f910bd4b11ca3004f956da1de3715eec, type: 3}
   PoolPista: []
-  tamanhoPool: 6
+  tamanhoPool: 7
 --- !u!4 &1926843679
 Transform:
   m_ObjectHideFlags: 0
@@ -3594,7 +3873,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.22638464, y: 0.7952735}
   m_AnchorMax: {x: 0.76900005, y: 0.94900006}
-  m_AnchoredPosition: {x: 0.41999817, y: 0.5400009}
+  m_AnchoredPosition: {x: 0.4199829, y: 0.54000854}
   m_SizeDelta: {x: 0.25009155, y: 1.8174896}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1941161951
@@ -3648,6 +3927,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1959035785}
   - component: {fileID: 1959035786}
+  - component: {fileID: 1959035787}
   m_Layer: 5
   m_Name: Slider SFX
   m_TagString: Untagged
@@ -3662,9 +3942,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959035784}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1378528669}
   - {fileID: 461908387}
@@ -3725,7 +4005,37 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1959035787}
+        m_MethodName: SfxCnhage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1959035787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959035784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 0}
+  sliderUI: {fileID: 0}
+  sliderSFX: {fileID: 1959035786}
+  sliderGeral: {fileID: 0}
+  mixer: {fileID: 24100000, guid: a2a32e2b1d4cdd5459fb736ebf7c6756, type: 2}
+  cena: 
+  tela: {fileID: 0}
 --- !u!1 &1991772606
 GameObject:
   m_ObjectHideFlags: 0
@@ -3763,7 +4073,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0001296997}
+  m_AnchoredPosition: {x: 0, y: 0.00012207031}
   m_SizeDelta: {x: 0, y: -0.00024414062}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1991772608
@@ -3850,8 +4160,9 @@ GameObject:
   - component: {fileID: 2050861263}
   - component: {fileID: 2050861267}
   - component: {fileID: 2050861266}
-  - component: {fileID: 2050861265}
   - component: {fileID: 2050861264}
+  - component: {fileID: 2050861265}
+  - component: {fileID: 2050861268}
   m_Layer: 5
   m_Name: "N\xE3o"
   m_TagString: Untagged
@@ -3875,7 +4186,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.37778845, y: 0.2417265}
   m_AnchorMax: {x: 0.6101923, y: 0.3287265}
-  m_AnchoredPosition: {x: 0.18030167, y: -0.099998474}
+  m_AnchoredPosition: {x: 0.18029785, y: -0.099990845}
   m_SizeDelta: {x: -0.1496582, y: 0.3469162}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &2050861264
@@ -4016,7 +4327,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2050861266}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2050861268}
+        m_MethodName: Close
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2050861266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4054,6 +4376,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050861262}
   m_CullTransparentMesh: 0
+--- !u!114 &2050861268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050861262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 0}
+  sliderUI: {fileID: 0}
+  sliderSFX: {fileID: 0}
+  sliderGeral: {fileID: 0}
+  mixer: {fileID: 0}
+  cena: 
+  tela: {fileID: 77269984}
 --- !u!1 &2124882671
 GameObject:
   m_ObjectHideFlags: 0
@@ -4072,7 +4413,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2124882672
 RectTransform:
   m_ObjectHideFlags: 0

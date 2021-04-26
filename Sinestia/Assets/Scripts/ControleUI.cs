@@ -16,9 +16,9 @@ public class ControleUI : MonoBehaviour
 
     }
 
-    public void SfxCnhage()
+    public void SfxChange()
     {
-        mixer.SetFloat("sSfxVolume", sliderSFX.value);
+        mixer.SetFloat("SfxVolume", sliderSFX.value);
     }
     public void MusicChange()
     {
@@ -35,6 +35,10 @@ public class ControleUI : MonoBehaviour
     public void ChangeScene()
     {
         SceneManager.LoadScene("cena");
+        if(Time.timeScale == 0)
+        {
+            Time.timeScale = 1;
+        }
     }
     public void Open()
     {

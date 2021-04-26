@@ -41,7 +41,8 @@ GameObject:
   - component: {fileID: 5511323198726538218}
   - component: {fileID: 8547024569113725127}
   - component: {fileID: 1889186483172937251}
-  m_Layer: 0
+  - component: {fileID: 594479523198851904}
+  m_Layer: 9
   m_Name: Colisor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,6 +88,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c95c2d6ab0e9264fb1da173822553a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &594479523198851904
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7330549310507421815}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8237123296994271005
 GameObject:
   m_ObjectHideFlags: 0
