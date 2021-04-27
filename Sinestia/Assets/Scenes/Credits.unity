@@ -487,6 +487,7 @@ GameObject:
   - component: {fileID: 1309971196}
   - component: {fileID: 1309971195}
   - component: {fileID: 1309971194}
+  - component: {fileID: 1309971198}
   m_Layer: 5
   m_Name: Voltar
   m_TagString: Untagged
@@ -524,7 +525,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b573a0d5a79804049a39eaf749a8b7c5, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -651,7 +652,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1309971196}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1309971198}
+        m_MethodName: ChangeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1309971196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -689,6 +701,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309971192}
   m_CullTransparentMesh: 0
+--- !u!114 &1309971198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309971192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 0}
+  sliderUI: {fileID: 0}
+  sliderSFX: {fileID: 0}
+  sliderGeral: {fileID: 0}
+  mixer: {fileID: 0}
+  cena: Main Menu
+  tela: {fileID: 0}
 --- !u!1 &1452516627
 GameObject:
   m_ObjectHideFlags: 0

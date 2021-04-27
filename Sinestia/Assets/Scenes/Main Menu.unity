@@ -491,6 +491,7 @@ GameObject:
   - component: {fileID: 234283143}
   - component: {fileID: 234283142}
   - component: {fileID: 234283145}
+  - component: {fileID: 234283146}
   m_Layer: 5
   m_Name: Voltar
   m_TagString: Untagged
@@ -559,7 +560,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 234283143}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 234283146}
+        m_MethodName: Close
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &234283143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,7 +620,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b573a0d5a79804049a39eaf749a8b7c5, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -693,6 +705,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &234283146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234283140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 0}
+  sliderUI: {fileID: 0}
+  sliderSFX: {fileID: 0}
+  sliderGeral: {fileID: 0}
+  mixer: {fileID: 0}
+  cena: 
+  tela: {fileID: 464330854}
 --- !u!1 &245147989
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,7 +874,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.22638464, y: 0.700453}
   m_AnchorMax: {x: 0.77380776, y: 0.791}
-  m_AnchoredPosition: {x: 0.49999237, y: 0.32799911}
+  m_AnchoredPosition: {x: 0.5, y: 0.32800293}
   m_SizeDelta: {x: 0.4672699, y: 0.60684204}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &274555311
@@ -900,6 +931,7 @@ GameObject:
   - component: {fileID: 304035366}
   - component: {fileID: 304035365}
   - component: {fileID: 304035368}
+  - component: {fileID: 304035369}
   m_Layer: 5
   m_Name: "Cr\xE9ditos"
   m_TagString: Untagged
@@ -968,7 +1000,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 304035366}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 304035369}
+        m_MethodName: ChangeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &304035366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1017,7 +1060,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b573a0d5a79804049a39eaf749a8b7c5, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1102,6 +1145,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &304035369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304035363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 0}
+  sliderUI: {fileID: 0}
+  sliderSFX: {fileID: 0}
+  sliderGeral: {fileID: 0}
+  mixer: {fileID: 0}
+  cena: Credits
+  tela: {fileID: 0}
 --- !u!1 &464330854
 GameObject:
   m_ObjectHideFlags: 0
@@ -1302,6 +1364,7 @@ GameObject:
   - component: {fileID: 479563712}
   - component: {fileID: 479563711}
   - component: {fileID: 479563714}
+  - component: {fileID: 479563715}
   m_Layer: 5
   m_Name: Jogar
   m_TagString: Untagged
@@ -1370,7 +1433,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 479563712}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 479563715}
+        m_MethodName: ChangeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &479563712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1419,7 +1493,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 951b314d42d762547b4b81642077f6a1, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1504,6 +1578,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &479563715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479563709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 0}
+  sliderUI: {fileID: 0}
+  sliderSFX: {fileID: 0}
+  sliderGeral: {fileID: 0}
+  mixer: {fileID: 0}
+  cena: Level
+  tela: {fileID: 0}
 --- !u!1 &574932401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1899,6 +1992,7 @@ GameObject:
   - component: {fileID: 862789034}
   - component: {fileID: 862789033}
   - component: {fileID: 862789036}
+  - component: {fileID: 862789037}
   m_Layer: 5
   m_Name: Ranking
   m_TagString: Untagged
@@ -1967,7 +2061,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 862789034}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 862789037}
+        m_MethodName: Open
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &862789034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2016,7 +2121,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b573a0d5a79804049a39eaf749a8b7c5, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2101,6 +2206,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &862789037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862789031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 0}
+  sliderUI: {fileID: 0}
+  sliderSFX: {fileID: 0}
+  sliderGeral: {fileID: 0}
+  mixer: {fileID: 0}
+  cena: 
+  tela: {fileID: 464330854}
 --- !u!1 &872800819
 GameObject:
   m_ObjectHideFlags: 0
@@ -2459,6 +2583,7 @@ GameObject:
   - component: {fileID: 1196659227}
   - component: {fileID: 1196659226}
   - component: {fileID: 1196659225}
+  - component: {fileID: 1196659229}
   m_Layer: 5
   m_Name: Voltar
   m_TagString: Untagged
@@ -2496,7 +2621,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b573a0d5a79804049a39eaf749a8b7c5, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2623,7 +2748,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1196659227}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1196659229}
+        m_MethodName: Close
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1196659227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2661,6 +2797,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196659223}
   m_CullTransparentMesh: 0
+--- !u!114 &1196659229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196659223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 0}
+  sliderUI: {fileID: 0}
+  sliderSFX: {fileID: 0}
+  sliderGeral: {fileID: 0}
+  mixer: {fileID: 0}
+  cena: 
+  tela: {fileID: 1730597740}
 --- !u!1 &1284228991
 GameObject:
   m_ObjectHideFlags: 0
@@ -2909,6 +3064,7 @@ GameObject:
   - component: {fileID: 1485478529}
   - component: {fileID: 1485478528}
   - component: {fileID: 1485478531}
+  - component: {fileID: 1485478532}
   m_Layer: 5
   m_Name: "Configura\xE7\xF5es"
   m_TagString: Untagged
@@ -2977,7 +3133,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1485478529}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1485478532}
+        m_MethodName: Open
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1485478529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3026,7 +3193,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b573a0d5a79804049a39eaf749a8b7c5, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -3111,6 +3278,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1485478532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485478526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 0}
+  sliderUI: {fileID: 0}
+  sliderSFX: {fileID: 0}
+  sliderGeral: {fileID: 0}
+  mixer: {fileID: 0}
+  cena: 
+  tela: {fileID: 1730597740}
 --- !u!1 &1491075869
 GameObject:
   m_ObjectHideFlags: 0
@@ -3719,8 +3905,8 @@ GameObject:
   - component: {fileID: 1945663402}
   - component: {fileID: 1945663401}
   - component: {fileID: 1945663400}
-  - component: {fileID: 1945663399}
   - component: {fileID: 1945663403}
+  - component: {fileID: 1945663399}
   m_Layer: 5
   m_Name: Tutorial
   m_TagString: Untagged
@@ -3747,102 +3933,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0.37016296, y: 0.18000793}
   m_SizeDelta: {x: -0.024765015, y: 0.5230255}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!82 &1945663399
-AudioSource:
+--- !u!114 &1945663399
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945663397}
   m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b287edbe36e9d74abcbbdac2205effc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 0}
+  sliderUI: {fileID: 0}
+  sliderSFX: {fileID: 0}
+  sliderGeral: {fileID: 0}
+  mixer: {fileID: 0}
+  cena: Tutorial
+  tela: {fileID: 0}
 --- !u!114 &1945663400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3885,7 +3994,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1945663401}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945663399}
+        m_MethodName: ChangeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1945663401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3934,7 +4054,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b573a0d5a79804049a39eaf749a8b7c5, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class ControleUI : MonoBehaviour
 {
@@ -34,7 +35,7 @@ public class ControleUI : MonoBehaviour
     }
     public void ChangeScene()
     {
-        SceneManager.LoadScene("cena");
+        SceneManager.LoadScene(cena);
         if(Time.timeScale == 0)
         {
             Time.timeScale = 1;
