@@ -36,7 +36,7 @@ public class Procedural : MonoBehaviour
     {
         UltimaPeca = Instantiate(ListaPecas[0], this.transform);
 
-        for (int i = 1; i < tamanhoPista; i++)
+        for (int i = 0; i < tamanhoPista; i++)
         {
             GeraPista();
         }
@@ -44,6 +44,7 @@ public class Procedural : MonoBehaviour
     void Start()
     {
         PistaInicial();
+        procedural = this;
     }
 
 

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ColisorPista : MonoBehaviour
 {
+
     private void OnTriggerExit(Collider other)
     {
         Debug.Log("passou");

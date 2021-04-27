@@ -3168,8 +3168,9 @@ GameObject:
   - component: {fileID: 1385002134}
   - component: {fileID: 1385002133}
   - component: {fileID: 1385002132}
-  - component: {fileID: 1385002131}
   - component: {fileID: 1385002130}
+  - component: {fileID: 1385002131}
+  - component: {fileID: 1385002135}
   m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
@@ -3191,19 +3192,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alvo: {fileID: 1385002134}
   Escudo: {fileID: 0}
---- !u!65 &1385002131
-BoxCollider:
+--- !u!54 &1385002131
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385002129}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!23 &1385002132
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3265,6 +3269,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1385002135
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385002129}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1454565539
 GameObject:
   m_ObjectHideFlags: 0
@@ -3812,7 +3829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5ccc0bc03c313c46a88b1044bd4f8f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tamanhoPista: 9
+  tamanhoPista: 11
   ListaPecas:
   - {fileID: 8070249118875840278, guid: 2ee324db816c89245ad30a38e083efd9, type: 3}
   - {fileID: 1301072624818104957, guid: d7700e98e0b55c94fba3ef505a1ccaa3, type: 3}
