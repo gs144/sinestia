@@ -279,6 +279,7 @@ MonoBehaviour:
   mixer: {fileID: 0}
   cena: Level
   tela: {fileID: 0}
+  Som: {fileID: 96886892}
 --- !u!82 &96886892
 AudioSource:
   m_ObjectHideFlags: 0
@@ -886,6 +887,7 @@ MonoBehaviour:
   mixer: {fileID: 0}
   cena: Main Menu
   tela: {fileID: 0}
+  Som: {fileID: 1312158556}
 --- !u!82 &1312158556
 AudioSource:
   m_ObjectHideFlags: 0

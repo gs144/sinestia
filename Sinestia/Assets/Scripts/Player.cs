@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     private int vida = 2;
     private int pontos=0;
     public GameObject Escudo;
+    public AudioSource audioVida;
 
     void Awake()
     {
@@ -23,6 +24,8 @@ public class Player : MonoBehaviour
     {
         InvokeRepeating("movimenta", 0, 0.05f);
         Invoke("StartHUD", 0.5f);
+        audioVida.Play();
+
     }
     void Update()
     {
@@ -68,6 +71,7 @@ public class Player : MonoBehaviour
         if (outro.gameObject.CompareTag("Obstaculo"))
         {
             vida--;
+            //audioVida.Play();
         }
     }
     void Pulo()
@@ -100,6 +104,7 @@ public class Player : MonoBehaviour
             else
             {
                 vida = value;
+                
             }
             ControleHUD.controleHUD.Vida(vida);
         }

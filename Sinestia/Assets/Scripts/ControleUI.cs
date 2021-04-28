@@ -33,8 +33,8 @@ public class ControleUI : MonoBehaviour
     public void ChangeScene()
     {
         Som.Play();
-        SceneManager.LoadScene(cena);
-        if(Time.timeScale == 0)
+        StartCoroutine(SceneWait());
+        if (Time.timeScale == 0)
         {
             Time.timeScale = 1;
         }
@@ -72,6 +72,11 @@ public class ControleUI : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(0.1f);
         tela.SetActive(false);
+    }
+    IEnumerator SceneWait()
+    {
+        yield return new WaitForSecondsRealtime(0.1f);
+        SceneManager.LoadScene(cena);
     }
 
 }

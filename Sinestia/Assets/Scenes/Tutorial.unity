@@ -598,6 +598,7 @@ MonoBehaviour:
   mixer: {fileID: 0}
   cena: Main Menu
   tela: {fileID: 0}
+  Som: {fileID: 1045680849}
 --- !u!82 &1045680849
 AudioSource:
   m_ObjectHideFlags: 0
