@@ -3,17 +3,12 @@ guid: d5bc247177fc7f44894990eb8d3895e0
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Pista Base
-    second: {fileID: 2100000, guid: 687fedba2ac6e0e4ab1b731e20ae4571, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
