@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     int cont;
     public Transform alvo;
     float speed = 10;
-    private int vida = 2;
+    private int vida = 3;
     private int pontos=0;
     public GameObject Escudo;
     public AudioSource audioVida;
@@ -22,7 +22,8 @@ public class Player : MonoBehaviour
     }
     void Start()
     {
-        InvokeRepeating("movimenta", 0, 0.05f);
+        InvokeRepeating("Movimenta", 0, 0.05f);
+        InvokeRepeating("ContPontos", 1.0f, 1.0f);
         Invoke("StartHUD", 0.5f);
         audioVida.Play();
 
@@ -34,7 +35,7 @@ public class Player : MonoBehaviour
         
     }
 
-    void movimenta()
+    void Movimenta()
     {
         //cont++;
         //ebug.Log(cont);
@@ -84,7 +85,7 @@ public class Player : MonoBehaviour
     }
     void ContPontos()
     {
-
+        Pontos += 10;
     }
     public int Vida
     {
@@ -128,6 +129,7 @@ public class Player : MonoBehaviour
             {
                 pontos = value;
             }
+            
             ControleHUD.controleHUD.Pontos(pontos);
         }
     }
