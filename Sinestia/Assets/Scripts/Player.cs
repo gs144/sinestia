@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         InvokeRepeating("Movimenta", 0, 0.05f);
-        InvokeRepeating("ContPontos", 1.0f, 1.0f);
+        InvokeRepeating("ContPontos", 1.0f, 2.0f);
         Invoke("StartHUD", 0.5f);
         audioVida.Play();
 
@@ -85,7 +85,7 @@ public class Player : MonoBehaviour
     }
     void ContPontos()
     {
-        Pontos += 10;
+        Pontos += 100;
     }
     public int Vida
     {
