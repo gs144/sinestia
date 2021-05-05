@@ -107,6 +107,12 @@ MonoBehaviour:
   gira: {fileID: 6887216889203696702}
   speed: 0.01
   conector: {fileID: 8666278069155519702}
+  PowerUp_List:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &3103188997794729797
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,7 +200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa905369f100e224cb92912fccab60a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pistaBaixo: 1
 --- !u!1001 &4646512604023908812
 PrefabInstance:
   m_ObjectHideFlags: 0

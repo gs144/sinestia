@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     int cont;
     public Transform alvo;
     float speed = 10;
-    private int vida = 3;
+    private int vida = 2;
     private int pontos=0;
     public GameObject Escudo;
     public AudioSource audios;
@@ -56,9 +56,19 @@ public class Player : MonoBehaviour
     }
     void OnCollisionEnter(Collision outro)
     {
+        if (outro.gameObject.CompareTag("Obstaculo"))
+        {
+            vida--;
+            audios.PlayOneShot(audio_perderVida, 1.0f);
+        }
+        
+    }
+    void OnTriggerEnter(Collider outro)
+    {
         if (outro.gameObject.CompareTag("Vida"))
         {
             audios.PlayOneShot(audio_vida, 1.0f);
+            Vida ++;
 
             /*if (vida < 3 && vida > 0)
            {
@@ -72,14 +82,9 @@ public class Player : MonoBehaviour
         if (outro.gameObject.CompareTag("Escudo"))
         {
             audios.PlayOneShot(audio_escudo, 1.0f);
-            for (int x = 0; x < 10; x++) Escudo.SetActive(true);
+            Escudo.SetActive(true);
+            Invoke("DesativaEscudo", 10.0f);
         }
-        if (outro.gameObject.CompareTag("Obstaculo"))
-        {
-            vida--;
-            audios.PlayOneShot(audio_perderVida, 1.0f);
-        }
-        
     }
     void Pulo()
     {
@@ -143,5 +148,9 @@ public class Player : MonoBehaviour
     {
         ControleHUD.controleHUD.Vida(vida);
         ControleHUD.controleHUD.Pontos(pontos);
+    }
+    void DesativaEscudo()
+    {
+        Escudo.SetActive(false);
     }
 }
