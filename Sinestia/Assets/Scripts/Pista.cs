@@ -36,12 +36,12 @@ public class Pista : MonoBehaviour
         }
 #endif
 #if UNITY_ANDROID
-     if (input.touchCount>0){
+     if (Input.touchCount>0){
      if(Input.GetTouch(0).phase == TouchPhase.Began){
-        posToqueIniX=input.GetTouch(0).position.x;
+        posToqueIniX=Input.GetTouch(0).position.x;
         }
         if(Input.GetTouch(0).phase == TouchPhase.Ended){
-        posToqueFinX=input.GetTouch(0).position.x;
+        posToqueFinX=Input.GetTouch(0).position.x;
         }
         if(posToqueFinX>posToqueIniX){
         goalRotation += rotation;

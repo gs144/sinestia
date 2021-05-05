@@ -4063,6 +4063,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ranking_Controller
       objectReference: {fileID: 0}
+    - target: {fileID: 6389382332368226506, guid: de86997ef253ca0448737a5cdc32e714,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7528652625904192362, guid: de86997ef253ca0448737a5cdc32e714,
         type: 3}
       propertyPath: m_RootOrder

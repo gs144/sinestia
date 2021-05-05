@@ -45,12 +45,12 @@ public class Player : MonoBehaviour
         }
 #endif
 #if UNITY_ANDROID
-     if (input.touchCount>0){
+     if (Input.touchCount>0){
      if(Input.GetTouch(0).phase == TouchPhase.Began){
-        posToqueIni=input.GetTouch(0).position.y;
+        posToqueIni=Input.GetTouch(0).position.y;
         }
         if(Input.GetTouch(0).phase == TouchPhase.Ended){
-        posToqueFin=input.GetTouch(0).position.y;
+        posToqueFin=Input.GetTouch(0).position.y;
         }
         if(posToqueFin>posToqueIni){
         Pulo();
