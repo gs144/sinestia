@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pista
+  - Escudo
+  - Vida
+  - Obstaculo
   layers:
   - Default
   - TransparentFX

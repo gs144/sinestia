@@ -13,7 +13,8 @@ public class Player : MonoBehaviour
     private int vida = 3;
     private int pontos=0;
     public GameObject Escudo;
-    public AudioSource audioVida;
+    public AudioSource audios;
+    public AudioClip audio_vida, audio_escudo, audio_perderVida, audio_Slide, audio_Pulo;
 
     void Awake()
     {
@@ -23,9 +24,9 @@ public class Player : MonoBehaviour
     void Start()
     {
         InvokeRepeating("Movimenta", 0, 0.05f);
-        InvokeRepeating("ContPontos", 1.0f, 2.0f);
+        InvokeRepeating("ContPontos", 1.0f, 0.1f);
         Invoke("StartHUD", 0.5f);
-        audioVida.Play();
+
 
     }
     void Update()
@@ -55,37 +56,42 @@ public class Player : MonoBehaviour
     }
     void OnCollisionEnter(Collision outro)
     {
-        if (outro.gameObject.CompareTag("Vida")){
-            if (vida < 3 && vida > 0)
-            {
-                vida++;
+        if (outro.gameObject.CompareTag("Vida"))
+        {
+            audios.PlayOneShot(audio_vida, 1.0f);
+
+            /*if (vida < 3 && vida > 0)
+           {
+               vida++;
             }
             else
             {
-                vida = vida;
-            }
+             vida = vida;
+            }*/
         }
         if (outro.gameObject.CompareTag("Escudo"))
         {
+            audios.PlayOneShot(audio_escudo, 1.0f);
             for (int x = 0; x < 10; x++) Escudo.SetActive(true);
         }
         if (outro.gameObject.CompareTag("Obstaculo"))
         {
             vida--;
-            //audioVida.Play();
+            audios.PlayOneShot(audio_perderVida, 1.0f);
         }
+        
     }
     void Pulo()
     {
-
+        audios.PlayOneShot(audio_Pulo, 1.0f);
     }
     void Deslizar()
     {
-
+        audios.PlayOneShot(audio_Slide, 1.0f);
     }
     void ContPontos()
     {
-        Pontos += 100;
+        Pontos += 10;
     }
     public int Vida
     {

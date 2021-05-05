@@ -9,10 +9,11 @@ public class Pista : MonoBehaviour
     Vector3 goalRotation = new Vector3(0, 0, 0);
     Vector3 rotation = new Vector3(0, 0, 45.0f);
     public Transform conector;
+    public GameObject [] PowerUp_List;
 
     private void OnEnable()
     {
-
+        PowerUp();
     }
     private void OnDisable()
     {
@@ -32,5 +33,11 @@ public class Pista : MonoBehaviour
             // gira.Rotate(0.0f, 0.0f, -45.0f, Space.World);
         }
         gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(goalRotation), Time.time * speed);
+    }
+    void PowerUp()
+    {
+        
+        int numer = Random.Range(0, PowerUp_List.Length);
+        PowerUp_List[numer].SetActive(true);
     }
 }
