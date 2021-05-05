@@ -11,15 +11,16 @@ public class Player : MonoBehaviour
     public Transform alvo;
     float speed = 10;
     private int vida = 2;
-    private int pontos=0;
+    private int pontos = 0;
     public GameObject Escudo;
     public AudioSource audios;
     public AudioClip audio_vida, audio_escudo, audio_perderVida, audio_Slide, audio_Pulo;
+    private float posToqueIni, posToqueFin;
 
     void Awake()
     {
         player = this;
-        
+
     }
     void Start()
     {
@@ -32,8 +33,36 @@ public class Player : MonoBehaviour
     void Update()
     {
         Viver();
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+           Pulo();
+        }
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            Deslizar();
+            
+        }
+#endif
+#if UNITY_ANDROID
+     if (input.touchCount>0){
+     if(Input.GetTouch(0).phase == TouchPhase.Began){
+        posToqueIni=input.GetTouch(0).position.y;
+        }
+        if(Input.GetTouch(0).phase == TouchPhase.Ended){
+        posToqueFin=input.GetTouch(0).position.y;
+        }
+        if(posToqueFin>posToqueIni){
+        Pulo();
+        }
+        if(posToqueFin<posToqueIni){
+        Deslizar();
+        }
         
-        
+        }
+
+#endif
+
     }
 
     void Movimenta()
@@ -61,14 +90,14 @@ public class Player : MonoBehaviour
             vida--;
             audios.PlayOneShot(audio_perderVida, 1.0f);
         }
-        
+
     }
     void OnTriggerEnter(Collider outro)
     {
         if (outro.gameObject.CompareTag("Vida"))
         {
             audios.PlayOneShot(audio_vida, 1.0f);
-            Vida ++;
+            Vida++;
 
             /*if (vida < 3 && vida > 0)
            {
@@ -109,14 +138,15 @@ public class Player : MonoBehaviour
             if (value > 3)
             {
                 vida = 3;
-            }else if (value < 0)
+            }
+            else if (value < 0)
             {
                 vida = 0;
             }
             else
             {
                 vida = value;
-                
+
             }
             ControleHUD.controleHUD.Vida(vida);
         }
@@ -129,10 +159,11 @@ public class Player : MonoBehaviour
         }
         set
         {
-            if(value > 100000000)
+            if (value > 100000000)
             {
                 value = 100000000;
-            }else if(value < 0)
+            }
+            else if (value < 0)
             {
                 value = 0;
             }
@@ -140,7 +171,7 @@ public class Player : MonoBehaviour
             {
                 pontos = value;
             }
-            
+
             ControleHUD.controleHUD.Pontos(pontos);
         }
     }
