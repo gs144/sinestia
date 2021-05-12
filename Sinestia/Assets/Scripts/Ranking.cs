@@ -5,6 +5,7 @@ namespace Sinestia.Rankings
 {
     public class Ranking : MonoBehaviour
     {
+        //public Ranking ranking;
         [SerializeField] private int maxScoreboardEntries = 5;
         [SerializeField] private Transform rankingHolderTransform = null;
         [SerializeField] private GameObject rankingEntryObject = null;

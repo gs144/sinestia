@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public Transform alvo;
     float speed = 10;
     private int vida = 2;
-    private int pontos = 0;
+    //private int pontos = 0;
     public GameObject Escudo;
     public AudioSource audios;
     public AudioClip audio_vida, audio_escudo, audio_perderVida, audio_Slide, audio_Pulo;
@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
         InvokeRepeating("Movimenta", 0, 0.05f);
         InvokeRepeating("ContPontos", 1.0f, 0.1f);
         Invoke("StartHUD", 0.5f);
-
+        InvokeRepeating("Dano", 0, 2.0f);
 
     }
     void Update()
@@ -125,7 +125,7 @@ public class Player : MonoBehaviour
     }
     void ContPontos()
     {
-        Pontos += 10;
+        GameOverController.Pontos += 10;
     }
     public int Vida
     {
@@ -151,37 +151,18 @@ public class Player : MonoBehaviour
             ControleHUD.controleHUD.Vida(vida);
         }
     }
-    public int Pontos
-    {
-        get
-        {
-            return pontos;
-        }
-        set
-        {
-            if (value > 100000000)
-            {
-                value = 100000000;
-            }
-            else if (value < 0)
-            {
-                value = 0;
-            }
-            else
-            {
-                pontos = value;
-            }
-
-            ControleHUD.controleHUD.Pontos(pontos);
-        }
-    }
+    
     void StartHUD()
     {
         ControleHUD.controleHUD.Vida(vida);
-        ControleHUD.controleHUD.Pontos(pontos);
+        //ControleHUD.controleHUD.Pontos(pontos);
     }
     void DesativaEscudo()
     {
         Escudo.SetActive(false);
+    }
+    void Dano()
+    {
+        vida--;
     }
 }

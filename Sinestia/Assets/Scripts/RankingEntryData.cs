@@ -9,4 +9,5 @@ namespace Sinestia.Rankings
         public string entryName;
         public int entryScore;
     }
+
 }

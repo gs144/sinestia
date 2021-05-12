@@ -34,6 +34,7 @@ public class ControleUI : MonoBehaviour
     {
         Som.Play();
         StartCoroutine(SceneWait());
+        GameOverController.Pontos = 0;
         if (Time.timeScale == 0)
         {
             Time.timeScale = 1;
@@ -78,5 +79,5 @@ public class ControleUI : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.1f);
         SceneManager.LoadScene(cena);
     }
-
+   
 }

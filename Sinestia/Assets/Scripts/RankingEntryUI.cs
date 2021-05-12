@@ -10,7 +10,7 @@ namespace Sinestia.Rankings
         public void Initialise(RankingEntryData rankingEntryData)
         {
             entryNameText.text = rankingEntryData.entryName;
-            entryScoreText.text = rankingEntryData.entryScore.ToString();
+            entryScoreText.text = GameOverController.Pontos.ToString();
         }
     }
 }
