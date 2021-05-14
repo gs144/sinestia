@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
         InvokeRepeating("Movimenta", 0, 0.05f);
         InvokeRepeating("ContPontos", 1.0f, 0.1f);
         Invoke("StartHUD", 0.5f);
-        InvokeRepeating("Dano", 0, 2.0f);
+        //InvokeRepeating("Dano", 0, 2.0f);
 
     }
     void Update()

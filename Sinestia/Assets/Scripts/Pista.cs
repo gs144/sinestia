@@ -39,9 +39,11 @@ public class Pista : MonoBehaviour
      if (Input.touchCount>0){
      if(Input.GetTouch(0).phase == TouchPhase.Began){
         posToqueIniX=Input.GetTouch(0).position.x;
+        Debug.Log("comecou");
         }
         if(Input.GetTouch(0).phase == TouchPhase.Ended){
         posToqueFinX=Input.GetTouch(0).position.x;
+        Debug.Log("terminou");
         }
         if(posToqueFinX>posToqueIniX){
         goalRotation += rotation;

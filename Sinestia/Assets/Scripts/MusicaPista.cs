@@ -13,13 +13,13 @@ public class MusicaPista : MonoBehaviour
         {
             TocadorMusica.tocadorMusica.musica1.volume = 0.0f;
             TocadorMusica.tocadorMusica.musica2.volume = 1.0f;
-            Debug.Log("musica1");
+            Debug.Log("musica2");
         }
         else
         {
             TocadorMusica.tocadorMusica.musica1.volume = 1.0f;
             TocadorMusica.tocadorMusica.musica2.volume = 0.0f;
-            Debug.Log("musica2");
+            Debug.Log("musica1");
         }
     }
     private void OnTriggerEnter(Collider other)
