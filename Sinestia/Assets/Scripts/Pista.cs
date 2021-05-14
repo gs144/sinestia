@@ -11,6 +11,7 @@ public class Pista : MonoBehaviour
     public Transform conector;
     public GameObject[] PowerUp_List;
     private float posToqueIniX, posToqueFinX;
+    private bool tocando = false;
 
     private void OnEnable()
     {
@@ -35,32 +36,42 @@ public class Pista : MonoBehaviour
             // gira.Rotate(0.0f, 0.0f, -45.0f, Space.World);
         }
 #endif
-#if UNITY_ANDROID
-     if (Input.touchCount>0){
-     if(Input.GetTouch(0).phase == TouchPhase.Began){
-        posToqueIniX=Input.GetTouch(0).position.x;
-        Debug.Log("comecou");
-        }
-        if(Input.GetTouch(0).phase == TouchPhase.Ended){
-        posToqueFinX=Input.GetTouch(0).position.x;
-        Debug.Log("terminou");
-        }
-        if(posToqueFinX>posToqueIniX){
-        goalRotation += rotation;
-        }
-        if(posToqueFinX<posToqueIniX){
-        goalRotation -= rotation;
-        }
-        
+        #if UNITY_ANDROID
+        if (Input.touchCount > 0)
+        {
+            Touch toque = Input.GetTouch(0);
+            switch (toque.phase)
+            {
+                case TouchPhase.Began:
+                    tocando = true;
+                    posToqueIniX = Input.GetTouch(0).position.x;
+                    Debug.Log("comecou");
+                    Debug.Log(Input.touchCount);
+                    break;
+
+                case TouchPhase.Ended:
+                    posToqueFinX = Input.GetTouch(0).position.x;
+                    tocando = false;
+                    Debug.Log("terminou");
+                    if (posToqueFinX > posToqueIniX)
+                    {
+                        goalRotation += rotation;
+                    }
+                    if (posToqueFinX < posToqueIniX)
+                    {
+                        goalRotation -= rotation;
+                    }
+                    break;
+            }
         }
 
-#endif
-        gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(goalRotation), Time.time * speed);
-    }
-    void PowerUp()
-    {
+            #endif
+            gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(goalRotation), Time.time * speed);
+        }
+        void PowerUp()
+        {
 
-        int numer = Random.Range(0, PowerUp_List.Length);
-        PowerUp_List[numer].SetActive(true);
+            int numer = Random.Range(0, PowerUp_List.Length);
+            PowerUp_List[numer].SetActive(true);
+        }
     }
-}
