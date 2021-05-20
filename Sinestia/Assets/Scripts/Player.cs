@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     int cont;
     public Transform alvo;
     float speed = 10;
-    private int vida = 2;
+    private int vida = 3;
     //private int pontos = 0;
     public GameObject Escudo;
     public AudioSource audios;
@@ -33,26 +33,27 @@ public class Player : MonoBehaviour
     void Update()
     {
         Viver();
-#if UNITY_EDITOR
+        Debug.Log(vida);
+        #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.X))
         {
-           Pulo();
+            Pulo();
         }
         if (Input.GetKeyDown(KeyCode.Z))
         {
             Deslizar();
-            
+
         }
-#endif
+        #endif
         #if UNITY_ANDROID
         if (Input.touchCount > 0)
         {
             if (Input.GetTouch(0).phase == TouchPhase.Began)
             {
                 posToqueIni = Input.GetTouch(0).position.y;
-               
-        
-                
+
+
+
             }
             if (Input.GetTouch(0).phase == TouchPhase.Ended)
             {
@@ -69,78 +70,78 @@ public class Player : MonoBehaviour
 
 
             }
+        }
+
+        #endif
+
+    }
+
+    void Movimenta()
+    {
+        //cont++;
+        //ebug.Log(cont);
+
+        alvo.position += anda * Time.deltaTime * speed;
+    }
+    void Viver()
+    {
+        if (vida <= 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+        if (alvo.position.y < -5.8)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+    }
+    void OnCollisionEnter(Collision outro)
+    {
+        if (outro.gameObject.CompareTag("Obstaculo"))
+        {
+            vida--;
+            audios.PlayOneShot(audio_perderVida, 1.0f);
+        }
+
+    }
+    void OnTriggerEnter(Collider outro)
+    {
+        if (outro.gameObject.CompareTag("Vida"))
+        {
+            audios.PlayOneShot(audio_vida, 1.0f);
+            Vida++;
+
+            /*if (vida < 3 && vida > 0)
+           {
+               vida++;
             }
-
-            #endif
-
-        }
-
-        void Movimenta()
-        {
-            //cont++;
-            //ebug.Log(cont);
-
-            alvo.position += anda * Time.deltaTime * speed;
-        }
-        void Viver()
-        {
-            if (vida <= 0)
+            else
             {
-                SceneManager.LoadScene("GameOver");
-            }
-            if (alvo.position.y < -5.8)
-            {
-                SceneManager.LoadScene("GameOver");
-            }
+             vida = vida;
+            }*/
         }
-        void OnCollisionEnter(Collision outro)
+        if (outro.gameObject.CompareTag("Escudo"))
         {
-            if (outro.gameObject.CompareTag("Obstaculo"))
-            {
-                vida--;
-                audios.PlayOneShot(audio_perderVida, 1.0f);
-            }
-
+            audios.PlayOneShot(audio_escudo, 1.0f);
+            Escudo.SetActive(true);
+            Invoke("DesativaEscudo", 10.0f);
         }
-        void OnTriggerEnter(Collider outro)
-        {
-            if (outro.gameObject.CompareTag("Vida"))
-            {
-                audios.PlayOneShot(audio_vida, 1.0f);
-                Vida++;
-
-                /*if (vida < 3 && vida > 0)
-               {
-                   vida++;
-                }
-                else
-                {
-                 vida = vida;
-                }*/
-            }
-            if (outro.gameObject.CompareTag("Escudo"))
-            {
-                audios.PlayOneShot(audio_escudo, 1.0f);
-                Escudo.SetActive(true);
-                Invoke("DesativaEscudo", 10.0f);
-            }
-        }
-        void Pulo()
-        {
-            audios.PlayOneShot(audio_Pulo, 1.0f);
-            Debug.Log("pulo");
-            Debug.Log(posToqueFin);
-        }
-        void Deslizar()
-        {
-            audios.PlayOneShot(audio_Slide, 1.0f);
-            Debug.Log("deliza");
-            Debug.Log(posToqueIni);
-        }
-        void ContPontos()
-        {
-            GameOverController.Pontos += 10;
-        }
+    }
+    void Pulo()
+    {
+        audios.PlayOneShot(audio_Pulo, 1.0f);
+        Debug.Log("pulo");
+        Debug.Log(posToqueFin);
+    }
+    void Deslizar()
+    {
+        audios.PlayOneShot(audio_Slide, 1.0f);
+        Debug.Log("deliza");
+        Debug.Log(posToqueIni);
+    }
+    void ContPontos()
+    {
+        GameOverController.Pontos += 10;
+    }
     public int Vida
     {
         get

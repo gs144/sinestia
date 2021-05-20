@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 4302185526301840213}
   - component: {fileID: 872490395857280240}
   - component: {fileID: 3170325426301282362}
+  - component: {fileID: 3942475430766014267}
+  - component: {fileID: 200243942360946897}
   m_Layer: 0
   m_Name: obstaculo_abaixar_2
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -79,3 +81,29 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3942475430766014267
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3530749942471330287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5273762, y: 1.0578866, z: 0.46789813}
+  m_Center: {x: 0.33935642, y: 1.272084, z: -0.0000006109476}
+--- !u!65 &200243942360946897
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3530749942471330287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8485673, y: 1.7984047, z: 0.46789813}
+  m_Center: {x: -0.00004801154, y: 0.89741683, z: -0.0000006109476}

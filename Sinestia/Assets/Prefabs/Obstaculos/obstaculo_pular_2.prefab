@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3980608004760650858}
   - component: {fileID: 41146433756908495}
   - component: {fileID: 2843699080642313989}
+  - component: {fileID: 3140274433754266147}
   m_Layer: 0
   m_Name: obstaculo_pular_2
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3140274433754266147
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4356710712830435024}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2245774, y: 1.1602288, z: 1.5427086}
+  m_Center: {x: 0.20678091, y: 0.58245295, z: 0.061670184}
