@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 388163489229366597}
   - component: {fileID: 3660532827306715872}
   - component: {fileID: 1524508604534955562}
+  - component: {fileID: 7234561692948341372}
   m_Layer: 0
   m_Name: Obstaculo_pedra
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7234561692948341372
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020302876967878655}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.4573107, y: 0.54704046, z: 1.5649046}
+  m_Center: {x: -0.0009537339, y: 0.24259897, z: -0.052903593}

@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 4087734932439129939}
   - component: {fileID: 1086870362772361462}
   - component: {fileID: 2950316938596885564}
+  - component: {fileID: 2562750460989534088}
   m_Layer: 0
   m_Name: Obstaculo_Casa
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -80,3 +81,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2562750460989534088
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3742876050649843177}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.884323, y: 1.9823304, z: 2.9818654}
+  m_Center: {x: 0, y: 0.9903783, z: -0.045344234}

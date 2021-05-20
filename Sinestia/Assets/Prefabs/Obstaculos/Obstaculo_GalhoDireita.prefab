@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 520487091204125215}
   - component: {fileID: 3501267051482906042}
   - component: {fileID: 1689422279973931376}
+  - component: {fileID: 7363386860475279619}
+  - component: {fileID: 8825951670178491663}
   m_Layer: 0
   m_Name: Obstaculo_GalhoDireita
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -79,3 +81,29 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7363386860475279619
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897048574273366181}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.91980386, y: 2.0092747, z: 1.3227535}
+  m_Center: {x: 0.2014749, y: 1.0043117, z: -0.000000059604645}
+--- !u!65 &8825951670178491663
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897048574273366181}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.042399, y: 1.2208583, z: 1.3227535}
+  m_Center: {x: -0.68455464, y: 1.3985199, z: -0.000000059604645}

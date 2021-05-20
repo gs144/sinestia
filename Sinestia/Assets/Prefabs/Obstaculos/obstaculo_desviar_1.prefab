@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 4477863860016011708}
   - component: {fileID: 687725702608279065}
   - component: {fileID: 3346101577760875219}
+  - component: {fileID: 458309873015878667}
   m_Layer: 0
   m_Name: obstaculo_desviar_1
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &458309873015878667
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3850368602970522374}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6504347, y: 2.0288804, z: 1.9655892}
+  m_Center: {x: 0.027073443, y: 1.0144418, z: 0.17223233}
