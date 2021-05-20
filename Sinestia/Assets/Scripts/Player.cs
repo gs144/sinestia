@@ -94,7 +94,7 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
     }
-    void OnCollisionEnter(Collision outro)
+    /*void OnCollisionEnter(Collision outro)
     {
         if (outro.gameObject.CompareTag("Obstaculo"))
         {
@@ -102,7 +102,7 @@ public class Player : MonoBehaviour
             audios.PlayOneShot(audio_perderVida, 1.0f);
         }
 
-    }
+    }*/
     void OnTriggerEnter(Collider outro)
     {
         if (outro.gameObject.CompareTag("Vida"))
@@ -124,6 +124,11 @@ public class Player : MonoBehaviour
             audios.PlayOneShot(audio_escudo, 1.0f);
             Escudo.SetActive(true);
             Invoke("DesativaEscudo", 10.0f);
+        }
+        if (outro.gameObject.CompareTag("Obstaculo"))
+        {
+            Vida--;
+            audios.PlayOneShot(audio_perderVida, 1.0f);
         }
     }
     void Pulo()
