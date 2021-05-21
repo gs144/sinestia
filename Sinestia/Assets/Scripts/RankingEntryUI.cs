@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-namespace Sinestia.Rankings
-{
+
+
     public class RankingEntryUI : MonoBehaviour
     {
         [SerializeField] private Text entryNameText = null;
@@ -10,7 +10,7 @@ namespace Sinestia.Rankings
         public void Initialise(RankingEntryData rankingEntryData)
         {
             entryNameText.text = rankingEntryData.entryName;
-            entryScoreText.text = GameOverController.Pontos.ToString();
+            entryScoreText.text = rankingEntryData.entryScore.ToString();
         }
     }
-}
+
