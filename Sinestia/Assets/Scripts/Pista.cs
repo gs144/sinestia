@@ -26,11 +26,11 @@ public class Pista : MonoBehaviour
     void Update()
     {
 #if UNITY_EDITOR
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.D))
         {
             goalRotation -= rotation;
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             goalRotation += rotation;
             // gira.Rotate(0.0f, 0.0f, -45.0f, Space.World);

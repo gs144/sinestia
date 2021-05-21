@@ -4,22 +4,20 @@ using UnityEngine;
 
 public class MusicaPista : MonoBehaviour
 {
-    public static bool pistaBaixo;
+    public static bool pistaBaixo = false;
     public static MusicaPista musicaPista;
 
     void Update()
     {
         if (pistaBaixo == true)
         {
-            TocadorMusica.tocadorMusica.musica1.volume = 0.0f;
-            TocadorMusica.tocadorMusica.musica2.volume = 1.0f;
-            Debug.Log("musica2");
-        }
-        else
-        {
             TocadorMusica.tocadorMusica.musica1.volume = 1.0f;
             TocadorMusica.tocadorMusica.musica2.volume = 0.0f;
-            Debug.Log("musica1");
+        }
+        else if (pistaBaixo == false)
+        {
+            TocadorMusica.tocadorMusica.musica1.volume = 0.0f;
+            TocadorMusica.tocadorMusica.musica2.volume = 1.0f;
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -32,5 +30,19 @@ public class MusicaPista : MonoBehaviour
         {
             pistaBaixo = true;
         }
+    }
+    void Start()
+    {
+        musicaPista = this;
+    }
+    void Musica1()
+    {
+        TocadorMusica.tocadorMusica.musica1.volume += 0.1f;
+        TocadorMusica.tocadorMusica.musica2.volume -= 0.1f;
+    }
+    void Musica2()
+    {
+        TocadorMusica.tocadorMusica.musica1.volume -= 0.1f;
+        TocadorMusica.tocadorMusica.musica2.volume += 0.1f;
     }
 }
