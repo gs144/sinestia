@@ -34,7 +34,7 @@ public class ControleUI : MonoBehaviour
     {
         Som.Play();
         StartCoroutine(SceneWait());
-        GameOverController.Pontos = 0;
+        
         if (Time.timeScale == 0)
         {
             Time.timeScale = 1;

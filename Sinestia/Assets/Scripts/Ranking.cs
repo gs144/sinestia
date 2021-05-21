@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.IO;
 
-namespace Sinestia.Rankings
-{
+
+
     public class Ranking : MonoBehaviour
     {
         //public Ranking ranking;
@@ -10,8 +10,7 @@ namespace Sinestia.Rankings
         [SerializeField] private Transform rankingHolderTransform = null;
         [SerializeField] private GameObject rankingEntryObject = null;
 
-        [Header("Test")]
-        [SerializeField] RankingEntryData testEntryData = new RankingEntryData();
+        
 
         private string SavePath => $"{Application.persistentDataPath}/highscores.json";
 
@@ -25,11 +24,7 @@ namespace Sinestia.Rankings
             UpdateUI(savedScores);
         }
 
-        [ContextMenu("Add test Entry")]
-        public void AddTestEntry()
-        {
-            AddEntry(testEntryData);
-        }
+        
 
         public void AddEntry(RankingEntryData rankingEntryData)
         {
@@ -57,7 +52,7 @@ namespace Sinestia.Rankings
                 savedScores.highscores.RemoveRange(maxScoreboardEntries, savedScores.highscores.Count - maxScoreboardEntries);
             }
 
-            UpdateUI(savedScores);
+            
             SaveScores(savedScores);
         }
 
@@ -99,4 +94,3 @@ namespace Sinestia.Rankings
             }
         }
     }
-}

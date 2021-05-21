@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 58271788}
   - component: {fileID: 58271787}
   m_Layer: 5
-  m_Name: "Configura\xE7\xF5es"
+  m_Name: Game Over
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -808,11 +808,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 644948343}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d60c5be81d740104399625e877cd95f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 22d7ccc3b0627b2419cee08f09cab246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: {fileID: 0}
-  pontos: {fileID: 1215686244}
+  nomeJogador: {fileID: 429075206}
+  pontosJogador: {fileID: 1215686244}
 --- !u!1 &667722645
 GameObject:
   m_ObjectHideFlags: 0
@@ -1155,7 +1155,6 @@ GameObject:
   - component: {fileID: 1106299220}
   - component: {fileID: 1106299219}
   - component: {fileID: 1106299218}
-  - component: {fileID: 1106299221}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1226,12 +1225,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1106299221}
-        m_MethodName: AddTestEntry
-        m_Mode: 1
+      - m_Target: {fileID: 644948345}
+        m_MethodName: atualizaNome
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 429075206}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.InputField, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1274,24 +1273,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106299216}
   m_CullTransparentMesh: 0
---- !u!114 &1106299221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106299216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5988d0289768f6349a53badf17d5bc7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxScoreboardEntries: 5
-  rankingHolderTransform: {fileID: 0}
-  rankingEntryObject: {fileID: 0}
-  testEntryData:
-    entryName: 
-    entryScore: 0
 --- !u!1 &1215686242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,7 +1285,7 @@ GameObject:
   - component: {fileID: 1215686245}
   - component: {fileID: 1215686244}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Pontos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1407,7 +1388,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.35900003, y: 0.252}
   m_AnchorMax: {x: 0.65900004, y: 0.35023737}
-  m_AnchoredPosition: {x: 17.499977, y: -182.12962}
+  m_AnchoredPosition: {x: 17.5, y: -182.12964}
   m_SizeDelta: {x: -0.9470215, y: 0.37435913}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1312158555

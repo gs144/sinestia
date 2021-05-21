@@ -8,15 +8,17 @@ public class ControleHUD : MonoBehaviour
     public Image vida;
     public Text pontos;
     static public ControleHUD controleHUD;
+    
 
     public void Vida(int vidaPlayer)
     {
         vida.fillAmount = vidaPlayer/3.0f;
     }
 
-    public void Pontos()
+    public void Pontos(int pontosPlayer)
     {
-        pontos.text = GameOverController.Pontos.ToString();
+        
+        pontos.text = pontosPlayer.ToString();
     }
 
     void Awake()
@@ -28,6 +30,6 @@ public class ControleHUD : MonoBehaviour
     void Update()
     {
         //Debug.Log(GameOverController.Pontos);
-        Pontos();
+        //Pontos();
     }
 }

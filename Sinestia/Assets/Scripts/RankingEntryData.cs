@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Sinestia.Rankings
-{
+
+
     [Serializable]
     public struct RankingEntryData
     {
@@ -10,4 +10,3 @@ namespace Sinestia.Rankings
         public int entryScore;
     }
 
-}
