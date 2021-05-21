@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     Vector3 anda = Vector3.forward;
     int cont;
     public Transform alvo;
-    float speed = 10;
+    float speed = 20;
     private int vida = 3;
     //private int pontos = 0;
     public GameObject Escudo;
@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     public AudioClip audio_vida, audio_escudo, audio_perderVida, audio_Slide, audio_Pulo;
     private float posToqueIni, posToqueFin;
     private static int pontos = 0;
+    public bool shield = false;
 
     void Awake()
     {
@@ -36,7 +37,7 @@ public class Player : MonoBehaviour
     {
         Viver();
         Debug.Log(vida);
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.X))
         {
             Pulo();
@@ -46,8 +47,8 @@ public class Player : MonoBehaviour
             Deslizar();
 
         }
-        #endif
-        #if UNITY_ANDROID
+#endif
+#if UNITY_ANDROID
         if (Input.touchCount > 0)
         {
             if (Input.GetTouch(0).phase == TouchPhase.Began)
@@ -74,7 +75,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        #endif
+#endif
 
     }
 
@@ -96,15 +97,22 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
     }
-    /*void OnCollisionEnter(Collision outro)
+   /* void OnTriggerExit(Collider outro)
     {
         if (outro.gameObject.CompareTag("Obstaculo"))
         {
-            vida--;
-            audios.PlayOneShot(audio_perderVida, 1.0f);
+            if (shield == true)
+            {
+                Vida = Vida;
+            }
+            else
+            {
+                Vida--;
+                audios.PlayOneShot(audio_perderVida, 1.0f);
+            }
         }
 
-    }*/
+    )*/
     void OnTriggerEnter(Collider outro)
     {
         if (outro.gameObject.CompareTag("Vida"))
@@ -124,15 +132,23 @@ public class Player : MonoBehaviour
         if (outro.gameObject.CompareTag("Escudo"))
         {
             audios.PlayOneShot(audio_escudo, 1.0f);
+            shield = true;
             Escudo.SetActive(true);
             Invoke("DesativaEscudo", 10.0f);
         }
-        if (outro.gameObject.CompareTag("Obstaculo"))
+    if (outro.gameObject.CompareTag("Obstaculo"))
+    {
+        if (shield == true)
+        {
+            Vida = Vida;
+        }
+        else
         {
             Vida--;
             audios.PlayOneShot(audio_perderVida, 1.0f);
         }
     }
+}
     void Pulo()
     {
         audios.PlayOneShot(audio_Pulo, 1.0f);

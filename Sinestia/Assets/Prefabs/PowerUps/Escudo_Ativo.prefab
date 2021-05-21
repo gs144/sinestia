@@ -12,13 +12,15 @@ GameObject:
   - component: {fileID: 1006821800654307165}
   - component: {fileID: 3034305050950142871}
   - component: {fileID: 2559853696862734214}
+  - component: {fileID: 7122661684241774756}
+  - component: {fileID: 5615654622004170678}
   m_Layer: 0
   m_Name: Escudo_Ativo
   m_TagString: Escudo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 0
 --- !u!4 &4203873318703558904
 Transform:
   m_ObjectHideFlags: 0
@@ -176,3 +178,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!64 &7122661684241774756
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3538976284608637506}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8857979079920605032, guid: dcf2bc5893737e944ae9a95181889525, type: 3}
+--- !u!114 &5615654622004170678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3538976284608637506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe0cae287547034c8b542e33915760a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

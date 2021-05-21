@@ -32,7 +32,7 @@ Transform:
   - {fileID: 6334370197046364506}
   - {fileID: 3338136530692472037}
   m_Father: {fileID: 4174140467315691337}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2783222445940328082
 GameObject:
@@ -62,8 +62,65 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4174140467315691337}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3229603183383048747
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4258768882111950042}
+  - component: {fileID: 6656663277826245494}
+  - component: {fileID: 8805946008656757085}
+  m_Layer: 9
+  m_Name: PistaCima2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4258768882111950042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3229603183383048747}
+  m_LocalRotation: {x: -0, y: -0, z: 0.92387956, w: 0.38268343}
+  m_LocalPosition: {x: -2.61, y: 2.95, z: 20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4174140467315691337}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 135}
+--- !u!65 &6656663277826245494
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3229603183383048747}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.66653633, y: 2.5403538, z: 40}
+  m_Center: {x: 0.16673183, y: 0.113583565, z: -0.12387276}
+--- !u!114 &8805946008656757085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3229603183383048747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fab2d30ea5442634581c14ff9374a9f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4015492380597874018
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,8 +153,65 @@ Transform:
   - {fileID: 4857033478839078384}
   - {fileID: 3419738572385716755}
   m_Father: {fileID: 4174140467315691337}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4450948741680686508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 212660342965878215}
+  - component: {fileID: 1299262173957950457}
+  - component: {fileID: 2493711284482065826}
+  m_Layer: 9
+  m_Name: PistaBaixo1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &212660342965878215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4450948741680686508}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.03, y: 0, z: 20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4174140467315691337}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1299262173957950457
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4450948741680686508}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.66653633, y: 1.8952312, z: 40}
+  m_Center: {x: 0.16673183, y: 0.22271252, z: -0.12387276}
+--- !u!114 &2493711284482065826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4450948741680686508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a230e081f1b20e3469ad7a208535ef1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5578117248168846386
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,6 +242,63 @@ Transform:
   m_Father: {fileID: 4174140467315691337}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6019472743398107143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2252336522468331613}
+  - component: {fileID: 6411115109745767409}
+  - component: {fileID: 1916803334798241420}
+  m_Layer: 9
+  m_Name: PistaBaixo2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2252336522468331613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6019472743398107143}
+  m_LocalRotation: {x: -0, y: -0, z: -0.38268343, w: 0.92387956}
+  m_LocalPosition: {x: 2.73, y: -2.7, z: 20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4174140467315691337}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
+--- !u!65 &6411115109745767409
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6019472743398107143}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.66653633, y: 1.8952312, z: 40}
+  m_Center: {x: 0.16673183, y: 0.22271252, z: -0.12387276}
+--- !u!114 &1916803334798241420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6019472743398107143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a230e081f1b20e3469ad7a208535ef1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6181084025225736189
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,9 +331,9 @@ Transform:
   - {fileID: 6096967042506566211}
   - {fileID: 7942827071597478623}
   m_Father: {fileID: 4174140467315691337}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6704241172411787652
+--- !u!1 &6775072620600049373
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,53 +341,53 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8207283827772897183}
-  - component: {fileID: 5318307288258054137}
-  - component: {fileID: 5931676045625246965}
+  - component: {fileID: 8591958575926205789}
+  - component: {fileID: 802254777566382103}
+  - component: {fileID: 3296628262675071023}
   m_Layer: 9
-  m_Name: mudaMusica
+  m_Name: PistaCima1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8207283827772897183
+--- !u!4 &8591958575926205789
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6704241172411787652}
+  m_GameObject: {fileID: 6775072620600049373}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 20}
+  m_LocalPosition: {x: 3.86, y: 0, z: 20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4174140467315691337}
-  m_RootOrder: 3
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &5318307288258054137
+--- !u!65 &802254777566382103
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6704241172411787652}
+  m_GameObject: {fileID: 6775072620600049373}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 1, z: 40}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5931676045625246965
+  m_Size: {x: 0.66653633, y: 2.5403538, z: 40}
+  m_Center: {x: 0.16673183, y: 0.113583565, z: -0.12387276}
+--- !u!114 &3296628262675071023
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6704241172411787652}
+  m_GameObject: {fileID: 6775072620600049373}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa905369f100e224cb92912fccab60a0, type: 3}
+  m_Script: {fileID: 11500000, guid: fab2d30ea5442634581c14ff9374a9f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7285399048643690856
@@ -251,7 +422,7 @@ Transform:
   - {fileID: 8023748827330096323}
   - {fileID: 7326655663145860023}
   m_Father: {fileID: 4174140467315691337}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7330549310507421815
 GameObject:
@@ -341,12 +512,15 @@ Transform:
   - {fileID: 2421611165139947066}
   - {fileID: 2178902304770766753}
   - {fileID: 5511323198726538218}
-  - {fileID: 8207283827772897183}
   - {fileID: 7030816195128959221}
   - {fileID: 2182027294008491906}
   - {fileID: 1946933285029519436}
   - {fileID: 3350441574294519455}
   - {fileID: 1344823843915774931}
+  - {fileID: 212660342965878215}
+  - {fileID: 8591958575926205789}
+  - {fileID: 2252336522468331613}
+  - {fileID: 4258768882111950042}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

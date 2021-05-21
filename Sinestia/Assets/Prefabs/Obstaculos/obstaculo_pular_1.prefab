@@ -11,10 +11,7 @@ GameObject:
   - component: {fileID: 3969632296921778662}
   - component: {fileID: 52121384578434627}
   - component: {fileID: 2836664504588120713}
-  - component: {fileID: 1706648339931244776}
   - component: {fileID: 4177534874853634667}
-  - component: {fileID: 2319950962092161959}
-  - component: {fileID: 2685799910340951941}
   m_Layer: 0
   m_Name: obstaculo_pular_1
   m_TagString: Obstaculo
@@ -83,19 +80,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &1706648339931244776
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4349675860752634716}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0151029, y: 0.3754499, z: 0.37330267}
-  m_Center: {x: 0.00000023841858, y: 1.8273779, z: 0}
 --- !u!65 &4177534874853634667
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -109,29 +93,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0151029, y: 0.3837738, z: 0.37330267}
   m_Center: {x: 0.00000023841858, y: 0.1918869, z: 0}
---- !u!65 &2319950962092161959
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4349675860752634716}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.36712706, y: 2.0151029, z: 0.37330267}
-  m_Center: {x: 0.82398814, y: 1.0075514, z: 0}
---- !u!65 &2685799910340951941
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4349675860752634716}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.3588041, y: 2.0151029, z: 0.37330267}
-  m_Center: {x: -0.82814914, y: 1.0075514, z: 0}

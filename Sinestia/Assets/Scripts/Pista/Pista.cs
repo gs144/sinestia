@@ -25,7 +25,7 @@ public class Pista : MonoBehaviour
 
     void Update()
     {
-#if UNITY_EDITOR
+        #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.D))
         {
             goalRotation -= rotation;
@@ -35,7 +35,7 @@ public class Pista : MonoBehaviour
             goalRotation += rotation;
             // gira.Rotate(0.0f, 0.0f, -45.0f, Space.World);
         }
-#endif
+        #endif
         #if UNITY_ANDROID
         if (Input.touchCount > 0)
         {
@@ -65,13 +65,13 @@ public class Pista : MonoBehaviour
             }
         }
 
-            #endif
-            gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(goalRotation), Time.time * speed);
-        }
-        void PowerUp()
-        {
-
-            int numer = Random.Range(0, PowerUp_List.Length);
-            PowerUp_List[numer].SetActive(true);
-        }
+        #endif
+        gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(goalRotation), Time.time * speed);
     }
+    void PowerUp()
+    {
+
+        int numer = Random.Range(0, PowerUp_List.Length);
+        PowerUp_List[numer].SetActive(true);
+    }
+}

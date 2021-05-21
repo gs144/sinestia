@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MusicaPista : MonoBehaviour
 {
-    public static bool pistaBaixo = false;
+    public bool pistaBaixo = false;
     public static MusicaPista musicaPista;
 
     void Update()
@@ -13,6 +13,7 @@ public class MusicaPista : MonoBehaviour
         {
             TocadorMusica.tocadorMusica.musica1.volume = 1.0f;
             TocadorMusica.tocadorMusica.musica2.volume = 0.0f;
+
         }
         else if (pistaBaixo == false)
         {
@@ -20,7 +21,7 @@ public class MusicaPista : MonoBehaviour
             TocadorMusica.tocadorMusica.musica2.volume = 1.0f;
         }
     }
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if (pistaBaixo == true)
         {
@@ -30,7 +31,7 @@ public class MusicaPista : MonoBehaviour
         {
             pistaBaixo = true;
         }
-    }
+    }*/
     void Start()
     {
         musicaPista = this;
