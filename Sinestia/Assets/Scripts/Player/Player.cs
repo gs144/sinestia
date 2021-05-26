@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     static public Player player;
+    static Animator anim;
     Vector3 anda = Vector3.forward;
     int cont;
     public Transform alvo;
@@ -22,11 +23,13 @@ public class Player : MonoBehaviour
     void Awake()
     {
         player = this;
+        anim = GetComponent<Animator>();
         //GameController.game.jogador = player;
 
     }
     void Start()
     {
+        anim.SetBool("Idle", false);
         InvokeRepeating("Movimenta", 0, 0.05f);
         InvokeRepeating("ContPontos", 1.0f, 0.1f);
         Invoke("StartHUD", 0.5f);
@@ -142,14 +145,12 @@ public class Player : MonoBehaviour
     void Pulo()
     {
         audios.PlayOneShot(audio_Pulo, 1.0f);
-        Debug.Log("pulo");
-        Debug.Log(posToqueFin);
+        anim.SetTrigger("Jump");
     }
     void Deslizar()
     {
         audios.PlayOneShot(audio_Slide, 1.0f);
-        Debug.Log("deliza");
-        Debug.Log(posToqueIni);
+        anim.SetTrigger("Slide");
     }
     void ContPontos()
     {
