@@ -10,18 +10,12 @@ public class PlayerInstantiate : MonoBehaviour
         Debug.Log(GameController.game.PersonagemSelecionado);
         if (GameController.game.PersonagemSelecionado == "P1")
         {
-            Instantiate(P1);
+            Instantiate(P1, transform.position, transform.rotation);
         }
         else if (GameController.game.PersonagemSelecionado == "P2")
         {
             Instantiate(P2);
         }
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
 
     }
 }

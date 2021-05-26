@@ -81,9 +81,6 @@ public class Player : MonoBehaviour
 
     void Movimenta()
     {
-        //cont++;
-        //ebug.Log(cont);
-
         alvo.position += anda * Time.deltaTime * speed;
     }
     void Viver()
@@ -120,14 +117,7 @@ public class Player : MonoBehaviour
             audios.PlayOneShot(audio_vida, 1.0f);
             Vida++;
 
-            /*if (vida < 3 && vida > 0)
-           {
-               vida++;
-            }
-            else
-            {
-             vida = vida;
-            }*/
+           
         }
         if (outro.gameObject.CompareTag("Escudo"))
         {
