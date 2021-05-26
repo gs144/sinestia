@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
     public string nomeJogador;
     public int pontosJogador;
     static public GameController game;
+    public string PersonagemSelecionado = "P1";
 
     void Awake()
     {
