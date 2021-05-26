@@ -16,7 +16,7 @@ public class ControleUI : MonoBehaviour
 
     public void SfxChange()
     {
-        mixer.SetFloat("SfxVolume", sliderSFX.value);
+        mixer.SetFloat("Sfxvolume", sliderSFX.value);
     }
     public void MusicChange()
     {
