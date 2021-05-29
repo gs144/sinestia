@@ -13,10 +13,11 @@ public class ControleUI : MonoBehaviour
     public string cena;
     public GameObject tela;
     public AudioSource Som;
+    public Button P1, P2;
 
     public void SfxChange()
     {
-        mixer.SetFloat("SfxVolume", sliderSFX.value);
+        mixer.SetFloat("Sfxvolume", sliderSFX.value);
     }
     public void MusicChange()
     {
@@ -78,6 +79,10 @@ public class ControleUI : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(0.1f);
         SceneManager.LoadScene(cena);
+    }
+    public void Escolha(string selecionado)
+    {
+        GameController.game.PersonagemSelecionado = selecionado ;
     }
    
 }
