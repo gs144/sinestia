@@ -840,6 +840,8 @@ MonoBehaviour:
   cena: Credits
   tela: {fileID: 0}
   Som: {fileID: 304035368}
+  P1: {fileID: 0}
+  P2: {fileID: 0}
 --- !u!1 &464330854 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6916358113186995202, guid: de86997ef253ca0448737a5cdc32e714,
@@ -1218,6 +1220,8 @@ MonoBehaviour:
   cena: Level
   tela: {fileID: 0}
   Som: {fileID: 479563714}
+  P1: {fileID: 0}
+  P2: {fileID: 0}
 --- !u!1 &574932401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1666,6 +1670,8 @@ MonoBehaviour:
   cena: Character
   tela: {fileID: 0}
   Som: {fileID: 820794408}
+  P1: {fileID: 0}
+  P2: {fileID: 0}
 --- !u!82 &820794408
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2100,6 +2106,8 @@ MonoBehaviour:
   cena: 
   tela: {fileID: 789895239}
   Som: {fileID: 862789036}
+  P1: {fileID: 0}
+  P2: {fileID: 0}
 --- !u!1 &872800819
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,6 +2700,8 @@ MonoBehaviour:
   cena: 
   tela: {fileID: 1730597740}
   Som: {fileID: 1196659225}
+  P1: {fileID: 0}
+  P2: {fileID: 0}
 --- !u!1 &1284228991
 GameObject:
   m_ObjectHideFlags: 0
@@ -3314,6 +3324,8 @@ MonoBehaviour:
   cena: 
   tela: {fileID: 1730597740}
   Som: {fileID: 1485478531}
+  P1: {fileID: 0}
+  P2: {fileID: 0}
 --- !u!1 &1491075869
 GameObject:
   m_ObjectHideFlags: 0
@@ -3712,6 +3724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeJogador: 
   pontosJogador: 0
+  PersonagemSelecionado: P1
 --- !u!4 &1871657506
 Transform:
   m_ObjectHideFlags: 0
@@ -3860,6 +3873,8 @@ MonoBehaviour:
   cena: Tutorial
   tela: {fileID: 0}
   Som: {fileID: 1945663403}
+  P1: {fileID: 0}
+  P2: {fileID: 0}
 --- !u!114 &1945663400
 MonoBehaviour:
   m_ObjectHideFlags: 0
