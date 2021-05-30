@@ -3870,7 +3870,7 @@ MonoBehaviour:
   sliderSFX: {fileID: 0}
   sliderGeral: {fileID: 0}
   mixer: {fileID: 0}
-  cena: Tutorial
+  cena: Cinematic
   tela: {fileID: 0}
   Som: {fileID: 1945663403}
   P1: {fileID: 0}
