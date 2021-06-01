@@ -4,29 +4,20 @@ ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable:
   - first:
-      74: 6311101683318848201
-    second: Bake_Corrida
+      74: 1497379743317466289
+    second: Bake_Pulo
   - first:
       74: -4632553848069556091
     second: Bake_Idle
   - first:
-      74: 1497379743317466289
-    second: Bake_Pulo
+      74: 6311101683318848201
+    second: Bake_Corrida
   - first:
       74: 6364378947672843090
     second: Bake_Slide
   - first:
       74: -129989209414065382
     second: Esqueleto bopo|Bake_Pulo
-  - first:
-      74: -7059920059045141821
-    second: Bake_Idle (1)
-  - first:
-      74: 1937470542257385504
-    second: Bake_Pulo (1)
-  - first:
-      74: 6649101881651936955
-    second: Bake_Slide (1)
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -56,11 +47,40 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Bake_Corrida
-      takeName: Bake_Corrida
+      name: Bake_Pulo
+      takeName: Bake_Pulo
       internalID: 0
       firstFrame: 0
-      lastFrame: 27
+      lastFrame: 42
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Bake_Idle
+      takeName: Bake_Idle
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 108
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -85,19 +105,19 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Bake_Pulo
-      takeName: Bake_Pulo
+      name: Bake_Corrida
+      takeName: Bake_Corrida
       internalID: 0
       firstFrame: 0
-      lastFrame: 42
+      lastFrame: 27
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -156,35 +176,6 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Bake_Idle
-      takeName: Bake_Idle
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 108
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -259,7 +250,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

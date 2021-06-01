@@ -14,7 +14,7 @@ public class PlayerInstantiate : MonoBehaviour
         }
         else if (GameController.game.PersonagemSelecionado == "P2")
         {
-            Instantiate(P2);
+            Instantiate(P2, transform.position, transform.rotation);
         }
 
     }
