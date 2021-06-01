@@ -689,7 +689,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 250
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -2091,6 +2091,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Escudo_Ativo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538976284608637506, guid: 20389c5772a57ad4c804225b2847d823,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4203873318703558904, guid: 20389c5772a57ad4c804225b2847d823,
         type: 3}
