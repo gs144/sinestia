@@ -16,7 +16,7 @@ public class Pista : MonoBehaviour
     private void OnEnable()
     {
         PowerUp();
-        conector.rotation = Procedural.procedural.UltimaPeca.conector.rotation;
+        goalRotation = Procedural.procedural.UltimaPeca.conector.rotation.eulerAngles;
     }
     private void OnDisable()
     {
@@ -53,7 +53,7 @@ public class Pista : MonoBehaviour
                 case TouchPhase.Ended:
                     posToqueFinX = Input.GetTouch(0).position.x;
                     tocando = false;
-                    if (posToqueFinX > posToqueIniX)
+                    if (posToqueFinX > posToqueIniX)    
                     {
                         goalRotation += rotation;
                     }
