@@ -35,7 +35,11 @@ public class MusicaMenu : MonoBehaviour
 
         if(scene.name != "Main Menu" && scene.name != "Credits")
         {
-            Destroy(this.gameObject);
+            if (scene.name != "Character")
+            {
+                Destroy(this.gameObject);
+            }
         }
+        
     }
 }

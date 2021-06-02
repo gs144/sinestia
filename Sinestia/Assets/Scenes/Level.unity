@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.29359615, y: 0.78645295}
   m_AnchorMax: {x: 0.70661545, y: 0.9532736}
-  m_AnchoredPosition: {x: 0.4000244, y: 0.5700073}
+  m_AnchoredPosition: {x: 0.4000244, y: 0.5699463}
   m_SizeDelta: {x: 0.58743286, y: 0.6396332}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &31543816
@@ -1678,7 +1678,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.38500002, y: 0.28430435}
   m_AnchorMax: {x: 0.615, y: 0.37134784}
-  m_AnchoredPosition: {x: 0, y: 0.1000061}
+  m_AnchoredPosition: {x: 0, y: 0.099975586}
   m_SizeDelta: {x: 0.8503418, y: 0.3469162}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &635300477
@@ -1925,7 +1925,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.22000001, y: 0.38000003}
   m_AnchorMax: {x: 0.34847918, y: 0.45200002}
-  m_AnchoredPosition: {x: -0.5, y: 0.73857117}
+  m_AnchoredPosition: {x: -0.5, y: 0.7385864}
   m_SizeDelta: {x: 3.07576, y: 0.52282715}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &646672813
@@ -2401,7 +2401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.29359615, y: 0.78645295}
   m_AnchorMax: {x: 0.70661545, y: 0.9532736}
-  m_AnchoredPosition: {x: 0.4000244, y: -5.2799683}
+  m_AnchoredPosition: {x: 0.4000244, y: -5.279907}
   m_SizeDelta: {x: 0.58743286, y: 12.338516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &841792674
@@ -2985,7 +2985,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.38000003, y: 0.05154701}
   m_AnchorMax: {x: 0.62240386, y: 0.1367265}
-  m_AnchoredPosition: {x: -0.49038696, y: 0}
+  m_AnchoredPosition: {x: -0.49035645, y: 0}
   m_SizeDelta: {x: -0.33041382, y: -1.1244278}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1040279281
@@ -4289,6 +4289,7 @@ MonoBehaviour:
   - {fileID: 5727077920396160434, guid: 7eb45411dea41064f86c217679200e83, type: 3}
   - {fileID: 8359358675865744989, guid: a355ec0d4e1cea345830c20d578b03d8, type: 3}
   - {fileID: 3668672679716468417, guid: f910bd4b11ca3004f956da1de3715eec, type: 3}
+  UltimaPeca: {fileID: 0}
   PoolPista: []
   tamanhoPool: 7
 --- !u!4 &1926843679
