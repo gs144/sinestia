@@ -16,10 +16,11 @@ public class Pista : MonoBehaviour
     private void OnEnable()
     {
         PowerUp();
+        conector.rotation = Procedural.procedural.UltimaPeca.conector.rotation;
     }
     private void OnDisable()
     {
-        for(int x = 0; x < PowerUp_List.Length; x++)
+        for (int x = 0; x < PowerUp_List.Length; x++)
         {
             PowerUp_List[x].SetActive(false);
         }
@@ -27,7 +28,9 @@ public class Pista : MonoBehaviour
     }
     void Update()
     {
-        #if UNITY_EDITOR
+        if (Time.timeScale == 1)
+        {
+#if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.D))
         {
             goalRotation -= rotation;
@@ -36,8 +39,8 @@ public class Pista : MonoBehaviour
         {
             goalRotation += rotation;
         }
-        #endif
-        #if UNITY_ANDROID
+#endif
+#if UNITY_ANDROID
         if (Input.touchCount > 0)
         {
             Touch toque = Input.GetTouch(0);
@@ -62,8 +65,10 @@ public class Pista : MonoBehaviour
             }
         }
 
-        #endif
-        gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(goalRotation), Time.time * speed);
+#endif
+
+            gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(goalRotation), Time.time * speed);
+        }
     }
     void PowerUp()
     {

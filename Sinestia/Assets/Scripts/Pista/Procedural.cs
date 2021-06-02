@@ -6,7 +6,7 @@ public class Procedural : MonoBehaviour
 {
     public int tamanhoPista;
     public Pista[] ListaPecas;
-    private Pista UltimaPeca;
+    public Pista UltimaPeca;
     public List<Pista> PoolPista;
     public int tamanhoPool;
     static public Procedural procedural;
