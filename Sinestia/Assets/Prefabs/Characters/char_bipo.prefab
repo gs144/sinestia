@@ -1293,7 +1293,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c01aa5c4bc1f37d4cbf3b75db965c7c1, type: 2}
+  - {fileID: 2100000, guid: 1180e739872e4504b8e5c3cf17a2fb7b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1936,6 +1936,9 @@ MonoBehaviour:
   audio_Slide: {fileID: 8300000, guid: 8d091598312e6ac44b4e67c8ee4b126b, type: 3}
   audio_Pulo: {fileID: 8300000, guid: 82f5f4ddc7e695f45b644c9ae001d808, type: 3}
   shield: 0
+  offset: 0
+  costas: {fileID: 6243903370942540744}
+  text_costas: {fileID: 2402278154977210686}
 --- !u!82 &7500311362470273061
 AudioSource:
   m_ObjectHideFlags: 0

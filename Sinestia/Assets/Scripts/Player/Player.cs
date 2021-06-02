@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     private float posToqueIni, posToqueFin;
     private static int pontos = 0;
     public bool shield = false;
+    public Renderer text_costas;
 
     void Awake()
     {
@@ -119,14 +120,16 @@ public class Player : MonoBehaviour
         {
             audios.PlayOneShot(audio_vida, 1.0f);
             Vida++;
+            TextItem();
 
-           
+
         }
         if (outro.gameObject.CompareTag("Escudo"))
         {
             audios.PlayOneShot(audio_escudo, 1.0f);
             shield = true;
             Escudo.SetActive(true);
+            TextItem();
             Invoke("DesativaEscudo", 10.0f);
         }
     if (outro.gameObject.CompareTag("Obstaculo"))
@@ -139,7 +142,9 @@ public class Player : MonoBehaviour
         {
             Vida--;
             audios.PlayOneShot(audio_perderVida, 1.0f);
+            TextHit();
         }
+
     }
 }
     void Pulo()
@@ -155,6 +160,26 @@ public class Player : MonoBehaviour
     void ContPontos()
     {
         Pontos += 10;
+    }
+    void TextHit()
+    {
+
+        
+        
+        text_costas.material.SetTextureOffset("_MainTex", new Vector2(0, -0.25f));
+        Debug.Log("Hit");
+        StartCoroutine(TextWait());
+        
+    }
+    void TextItem()
+    {
+        
+        
+        
+        text_costas.material.SetTextureOffset("_MainTex", new Vector2(0, -0.125f));
+        Debug.Log("Item");
+        StartCoroutine(TextWait());
+        
     }
     public int Vida
     {
@@ -219,5 +244,10 @@ public class Player : MonoBehaviour
     void Dano()
     {
         vida--;
+    }
+    IEnumerator TextWait()
+    {
+        yield return new WaitForSecondsRealtime(1.5f);
+        text_costas.material.SetTextureOffset("_MainTex", new Vector2(0, 0));
     }
 }
