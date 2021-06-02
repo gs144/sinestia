@@ -1199,9 +1199,9 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.0012578343
-  m_Height: 0.0052006985
+  m_Height: 0.0070053204
   m_Direction: 1
-  m_Center: {x: 3.508234e-17, y: -0.0012565833, z: 1.312006e-10}
+  m_Center: {x: 3.74015e-17, y: -0.0013549069, z: 1.396802e-10}
 --- !u!1 &5194968257625667902
 GameObject:
   m_ObjectHideFlags: 0
@@ -2017,6 +2017,7 @@ GameObject:
   - component: {fileID: 5812759439585007176}
   - component: {fileID: 8394937355783564514}
   - component: {fileID: 8326749127138109209}
+  - component: {fileID: 1461359824688482706}
   m_Layer: 0
   m_Name: TocaMusica
   m_TagString: Untagged
@@ -2246,6 +2247,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1461359824688482706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7268161806078745704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa905369f100e224cb92912fccab60a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pistaBaixo: 0
 --- !u!1 &7508448651437784543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2908,8 +2922,6 @@ MonoBehaviour:
   audio_Slide: {fileID: 8300000, guid: 8d091598312e6ac44b4e67c8ee4b126b, type: 3}
   audio_Pulo: {fileID: 8300000, guid: 82f5f4ddc7e695f45b644c9ae001d808, type: 3}
   shield: 0
-  offset: 0
-  costas: {fileID: 8074040918979650761}
   text_costas: {fileID: 4701551475893323434}
 --- !u!1 &8775407778771870514
 GameObject:

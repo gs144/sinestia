@@ -1409,6 +1409,7 @@ GameObject:
   - component: {fileID: 7538367710505728227}
   - component: {fileID: 8867509923937301493}
   - component: {fileID: 3988846232150142059}
+  - component: {fileID: 3213513342500263087}
   m_Layer: 0
   m_Name: TocaMusica
   m_TagString: Untagged
@@ -1638,6 +1639,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3213513342500263087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7151193926639287394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa905369f100e224cb92912fccab60a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pistaBaixo: 0
 --- !u!1 &7491895864541784354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1936,8 +1950,6 @@ MonoBehaviour:
   audio_Slide: {fileID: 8300000, guid: 8d091598312e6ac44b4e67c8ee4b126b, type: 3}
   audio_Pulo: {fileID: 8300000, guid: 82f5f4ddc7e695f45b644c9ae001d808, type: 3}
   shield: 0
-  offset: 0
-  costas: {fileID: 6243903370942540744}
   text_costas: {fileID: 2402278154977210686}
 --- !u!82 &7500311362470273061
 AudioSource:

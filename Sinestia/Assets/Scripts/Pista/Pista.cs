@@ -19,10 +19,12 @@ public class Pista : MonoBehaviour
     }
     private void OnDisable()
     {
+        for(int x = 0; x < PowerUp_List.Length; x++)
+        {
+            PowerUp_List[x].SetActive(false);
+        }
         Procedural.procedural.PoolPista.Add(this);
     }
-
-
     void Update()
     {
         #if UNITY_EDITOR
@@ -33,7 +35,6 @@ public class Pista : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A))
         {
             goalRotation += rotation;
-            // gira.Rotate(0.0f, 0.0f, -45.0f, Space.World);
         }
         #endif
         #if UNITY_ANDROID
@@ -45,14 +46,10 @@ public class Pista : MonoBehaviour
                 case TouchPhase.Began:
                     tocando = true;
                     posToqueIniX = Input.GetTouch(0).position.x;
-                    Debug.Log("comecou");
-                    Debug.Log(Input.touchCount);
                     break;
-
                 case TouchPhase.Ended:
                     posToqueFinX = Input.GetTouch(0).position.x;
                     tocando = false;
-                    Debug.Log("terminou");
                     if (posToqueFinX > posToqueIniX)
                     {
                         goalRotation += rotation;
@@ -70,7 +67,6 @@ public class Pista : MonoBehaviour
     }
     void PowerUp()
     {
-
         int numer = Random.Range(0, PowerUp_List.Length);
         PowerUp_List[numer].SetActive(true);
     }

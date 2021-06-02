@@ -12,7 +12,6 @@ public class Player : MonoBehaviour
     public Transform alvo;
     float speed = 20;
     private int vida = 3;
-    //private int pontos = 0;
     public GameObject Escudo;
     public AudioSource audios;
     public AudioClip audio_vida, audio_escudo, audio_perderVida, audio_Slide, audio_Pulo;
@@ -25,8 +24,6 @@ public class Player : MonoBehaviour
     {
         player = this;
         anim = GetComponent<Animator>();
-        //GameController.game.jogador = player;
-
     }
     void Start()
     {
@@ -34,13 +31,10 @@ public class Player : MonoBehaviour
         InvokeRepeating("Movimenta", 0, 0.05f);
         InvokeRepeating("ContPontos", 1.0f, 0.1f);
         Invoke("StartHUD", 0.5f);
-        //InvokeRepeating("Dano", 0, 2.0f);
-
     }
     void Update()
     {
         Viver();
-        Debug.Log(vida);
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.X))
         {
@@ -49,7 +43,6 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             Deslizar();
-
         }
 #endif
 #if UNITY_ANDROID
@@ -58,8 +51,6 @@ public class Player : MonoBehaviour
             if (Input.GetTouch(0).phase == TouchPhase.Began)
             {
                 posToqueIni = Input.GetTouch(0).position.y;
-
-
 
             }
             if (Input.GetTouch(0).phase == TouchPhase.Ended)
@@ -74,13 +65,10 @@ public class Player : MonoBehaviour
                 {
                     Deslizar();
                 }
-
-
             }
         }
 
 #endif
-
     }
 
     void Movimenta()
@@ -98,8 +86,22 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
     }
-   /* void OnTriggerExit(Collider outro)
+    void OnTriggerEnter(Collider outro)
     {
+        if (outro.gameObject.CompareTag("Vida"))
+        {
+            audios.PlayOneShot(audio_vida, 1.0f);
+            Vida++;
+            TextItem();
+        }
+        if (outro.gameObject.CompareTag("Escudo"))
+        {
+            audios.PlayOneShot(audio_escudo, 1.0f);
+            shield = true;
+            Escudo.SetActive(true);
+            TextItem();
+            Invoke("DesativaEscudo", 10.0f);
+        }
         if (outro.gameObject.CompareTag("Obstaculo"))
         {
             if (shield == true)
@@ -110,43 +112,10 @@ public class Player : MonoBehaviour
             {
                 Vida--;
                 audios.PlayOneShot(audio_perderVida, 1.0f);
+                TextHit();
             }
         }
-
-    )*/
-    void OnTriggerEnter(Collider outro)
-    {
-        if (outro.gameObject.CompareTag("Vida"))
-        {
-            audios.PlayOneShot(audio_vida, 1.0f);
-            Vida++;
-            TextItem();
-
-
-        }
-        if (outro.gameObject.CompareTag("Escudo"))
-        {
-            audios.PlayOneShot(audio_escudo, 1.0f);
-            shield = true;
-            Escudo.SetActive(true);
-            TextItem();
-            Invoke("DesativaEscudo", 10.0f);
-        }
-    if (outro.gameObject.CompareTag("Obstaculo"))
-    {
-        if (shield == true)
-        {
-            Vida = Vida;
-        }
-        else
-        {
-            Vida--;
-            audios.PlayOneShot(audio_perderVida, 1.0f);
-            TextHit();
-        }
-
     }
-}
     void Pulo()
     {
         audios.PlayOneShot(audio_Pulo, 1.0f);
@@ -163,23 +132,13 @@ public class Player : MonoBehaviour
     }
     void TextHit()
     {
-
-        
-        
         text_costas.material.SetTextureOffset("_MainTex", new Vector2(0, -0.25f));
-        Debug.Log("Hit");
         StartCoroutine(TextWait());
-        
     }
     void TextItem()
     {
-        
-        
-        
         text_costas.material.SetTextureOffset("_MainTex", new Vector2(0, -0.125f));
-        Debug.Log("Item");
         StartCoroutine(TextWait());
-        
     }
     public int Vida
     {
@@ -205,7 +164,6 @@ public class Player : MonoBehaviour
             ControleHUD.controleHUD.Vida(vida);
         }
     }
-
     public int Pontos
     {
         get
