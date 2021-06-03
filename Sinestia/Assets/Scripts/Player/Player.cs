@@ -57,11 +57,11 @@ public class Player : MonoBehaviour
             {
                 posToqueFin = Input.GetTouch(0).position.y;
                 Debug.Log(posToqueFin);
-                if (posToqueFin - posToqueIni>10)
+                if (posToqueFin - posToqueIni>200)
                 {
                     Pulo();
                 }
-                if (posToqueFin - posToqueIni<-10)
+                if (posToqueFin - posToqueIni<-200)
                 {
                     Deslizar();
                 }
