@@ -10,7 +10,7 @@ public class TutorialPista : MonoBehaviour
     Vector3 rotation = new Vector3(0, 0, 45.0f);
     private float posToqueIniX, posToqueFinX;
     private bool tocando = false;
-    public bool direita = false, esquerda = false, cima = false, baixo = false;
+    public bool direita = false, esquerda = false, buraco = false;
     public static TutorialPista tutorialPista;
     void Start()
     {
@@ -96,9 +96,54 @@ public class TutorialPista : MonoBehaviour
                     }
                     }
 #endif
-            // gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(goalRotation), Time.time * speed);
+        }
+        if (buraco == true)
+        {
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            goalRotation -= rotation;
+            Time.timeScale = 1;
+            buraco=false;
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            goalRotation += rotation;
+            Time.timeScale = 1;
+            buraco=false;
+        }
+#endif
+#if UNITY_ANDROID
+        if (Input.touchCount > 0)
+        {
+            Touch toque = Input.GetTouch(0);
+            switch (toque.phase)
+            {
+                case TouchPhase.Began:
+                    tocando = true;
+                    posToqueIniX = Input.GetTouch(0).position.x;
+                    break;
+                case TouchPhase.Ended:
+                    posToqueFinX = Input.GetTouch(0).position.x;
+                    tocando = false;
+                    if (posToqueFinX > posToqueIniX)    
+                    {
+                        goalRotation += rotation;
+                        Time.timeScale = 1;
+                        buraco=false;
+                    }
+                    if (posToqueFinX < posToqueIniX)
+                    {
+                        goalRotation -= rotation;
+                        Time.timeScale = 1;
+                        buraco=false;
+                    }
+                    break;
+            }
         }
 
+#endif
+        }
     }
 }
 
