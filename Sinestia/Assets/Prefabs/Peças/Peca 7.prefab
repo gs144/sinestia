@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 645113598761332653}
   m_Layer: 9
   m_Name: Buraco5
-  m_TagString: Untagged
+  m_TagString: Buraco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 5911598334952216103}
   m_Layer: 9
   m_Name: Buraco12
-  m_TagString: Untagged
+  m_TagString: Buraco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 1579394267545196448}
   m_Layer: 9
   m_Name: Buraco6
-  m_TagString: Untagged
+  m_TagString: Buraco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 3886997898076325529}
   m_Layer: 9
   m_Name: Buraco1
-  m_TagString: Untagged
+  m_TagString: Buraco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 3008783197970061400}
   m_Layer: 9
   m_Name: Buraco3
-  m_TagString: Untagged
+  m_TagString: Buraco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -350,9 +350,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4620146919900848447}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Buracos
-  m_TagString: Untagged
+  m_TagString: Buraco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 1742570428566991936}
   m_Layer: 9
   m_Name: Buraco9
-  m_TagString: Untagged
+  m_TagString: Buraco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 2514847784932679060}
   m_Layer: 9
   m_Name: Buraco7
-  m_TagString: Untagged
+  m_TagString: Buraco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 2235751951662279112}
   m_Layer: 9
   m_Name: Buraco4
-  m_TagString: Untagged
+  m_TagString: Buraco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -528,7 +528,7 @@ GameObject:
   - component: {fileID: 6274702683255808602}
   m_Layer: 9
   m_Name: Buraco2
-  m_TagString: Untagged
+  m_TagString: Buraco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -636,7 +636,7 @@ GameObject:
   - component: {fileID: 1546550181335993867}
   m_Layer: 9
   m_Name: Buraco13
-  m_TagString: Untagged
+  m_TagString: Buraco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -680,7 +680,7 @@ GameObject:
   - component: {fileID: 4460234389728729194}
   m_Layer: 9
   m_Name: Buraco8
-  m_TagString: Untagged
+  m_TagString: Buraco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -724,7 +724,7 @@ GameObject:
   - component: {fileID: 8884232174335677578}
   m_Layer: 9
   m_Name: Buraco10
-  m_TagString: Untagged
+  m_TagString: Buraco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1072,7 +1072,7 @@ GameObject:
   - component: {fileID: 3522589799248299543}
   m_Layer: 9
   m_Name: Buraco11
-  m_TagString: Untagged
+  m_TagString: Buraco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
