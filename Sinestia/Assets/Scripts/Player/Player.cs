@@ -106,7 +106,10 @@ public class Player : MonoBehaviour
         {
             if (shield == true)
             {
+                Escudo.SetActive(false);
+                shield = false;
                 Vida = Vida;
+                
             }
             else
             {
