@@ -121,7 +121,7 @@ public class Player : MonoBehaviour
         if (outro.gameObject.CompareTag("Buraco"))
         {
             Debug.Log("aaaaaa");
-            anda = new Vector3(0, 0.001f, 1.0f);
+            anda = new Vector3(0, -2.0f, 1.0f);
         }
     }
     void Pulo()
