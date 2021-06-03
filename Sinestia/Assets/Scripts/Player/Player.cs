@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 {
     static public Player player;
     static Animator anim;
-    Vector3 anda = Vector3.forward;
+    Vector3 anda = new Vector3(0, 0, 1);
     int cont;
     public Transform alvo;
     float speed = 20;
@@ -109,7 +109,7 @@ public class Player : MonoBehaviour
                 Escudo.SetActive(false);
                 shield = false;
                 Vida = Vida;
-                
+
             }
             else
             {
@@ -117,6 +117,11 @@ public class Player : MonoBehaviour
                 audios.PlayOneShot(audio_perderVida, 1.0f);
                 TextHit();
             }
+        }
+        if (outro.gameObject.CompareTag("Buraco"))
+        {
+            Debug.Log("aaaaaa");
+            anda = new Vector3(0, 0.001f, 1.0f);
         }
     }
     void Pulo()
