@@ -141,8 +141,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.501888, y: 1, z: 16.234116}
-  m_Center: {x: 0.084817044, y: 9.405936e-10, z: -8.353668}
+  m_Size: {x: 2.8091788, y: 1, z: 15.568195}
+  m_Center: {x: 0.075296514, y: 5.3933324e-10, z: -8.020708}
 --- !u!1 &2182387395936114976
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,8 +329,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5199356, y: 1, z: 6.8815765}
-  m_Center: {x: -0.41064358, y: 1.2698294e-15, z: 36.687195}
+  m_Size: {x: 3.212066, y: 1, z: 6.6198273}
+  m_Center: {x: -0.25670862, y: -9.53361e-17, z: 36.81807}
 --- !u!1 &3639934731036054102
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,8 +373,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.6415625, y: 1, z: 39.9977}
-  m_Center: {x: -0.09991025, y: 0.000000003172357, z: 19.49885}
+  m_Size: {x: 2.7714348, y: 1, z: 39.9977}
+  m_Center: {x: -0.25984702, y: -0.0000000012450734, z: 19.49885}
 --- !u!1 &3716908687997778751
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,8 +417,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.501888, y: 1, z: 5.7734485}
-  m_Center: {x: 0.084817044, y: 9.405936e-10, z: 8.158798}
+  m_Size: {x: 3.2687287, y: 1, z: 5.0866723}
+  m_Center: {x: -0.031762835, y: -2.1614599e-11, z: 8.112414}
 --- !u!1 &3799893869554261083
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,8 +461,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5050335, y: 1, z: 6.8670235}
-  m_Center: {x: -0.049822807, y: 1.8015353e-16, z: 29.242334}
+  m_Size: {x: 3.3482, y: 1, z: 6.634243}
+  m_Center: {x: -0.12823963, y: -4.6038358e-17, z: 29.358725}
 --- !u!1 &3818638240391186080
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,8 +626,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.4295504, y: 1, z: 11.414938}
-  m_Center: {x: -0.24956974, y: -1.8132162e-11, z: 4.3355265}
+  m_Size: {x: 3.2697074, y: 1, z: 10.518936}
+  m_Center: {x: -0.16964804, y: 0.0000000018817752, z: 4.2926884}
 --- !u!1 &4926563210283495309
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,8 +795,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5622287, y: 1, z: 11.451986}
-  m_Center: {x: -0.040409803, y: 0, z: 2.4822512}
+  m_Size: {x: 3.5622287, y: 1, z: 10.561291}
+  m_Center: {x: -0.040409803, y: 0, z: 2.5002022}
 --- !u!1 &6578884183540638535
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,8 +880,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5224886, y: 1, z: 11.541855}
-  m_Center: {x: -0.04037332, y: -1.6352941e-10, z: -0.19158554}
+  m_Size: {x: 3.109237, y: 1, z: 10.656181}
+  m_Center: {x: 0.16625248, y: 5.2363003e-11, z: -0.20561981}
 --- !u!1 &7967198318056464654
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,8 +924,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5199356, y: 1, z: 12.436241}
-  m_Center: {x: -0.41064358, y: 1.2698294e-15, z: 33.909863}
+  m_Size: {x: 3.1468146, y: 1, z: 11.88426}
+  m_Center: {x: -0.22408295, y: 3.6830263e-16, z: 33.633873}
 --- !u!1 &8248888075658638433
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,8 +1025,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5622287, y: 1, z: 17.14321}
-  m_Center: {x: -0.040409803, y: 0, z: 17.772999}
+  m_Size: {x: 3.0195875, y: 1, z: 16.234707}
+  m_Center: {x: 0.006528914, y: 0, z: 17.767382}
 --- !u!1 &8709796553213060981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,8 +1069,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.4983225, y: 1, z: 6.76717}
-  m_Center: {x: -0.17153011, y: -0.0000000019610988, z: -15.997463}
+  m_Size: {x: 2.804103, y: 1, z: 6.386673}
+  m_Center: {x: -0.17575, y: -0.000000002138954, z: -16.187714}
 --- !u!1001 &217701336800204711
 PrefabInstance:
   m_ObjectHideFlags: 0

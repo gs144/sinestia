@@ -42,8 +42,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.6415625, y: 1, z: 5.8362484}
-  m_Center: {x: -0.09991025, y: -0.000000003172357, z: 2.4591017}
+  m_Size: {x: 2.9634311, y: 1, z: 5.264614}
+  m_Center: {x: -0.07396751, y: -0.0000000011842165, z: 2.4865093}
 --- !u!1 &706733004693000507
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,8 +184,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5622287, y: 1, z: 6.6099415}
-  m_Center: {x: -0.040409803, y: 0, z: 0.061228752}
+  m_Size: {x: 3.1570697, y: 1, z: 6.109108}
+  m_Center: {x: -0.2429893, y: 0, z: -0.189188}
 --- !u!1 &3064291841157999370
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,8 +262,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.501888, y: 1, z: 6.859803}
-  m_Center: {x: 0.084817044, y: 9.405936e-10, z: -3.7960324}
+  m_Size: {x: 3.2547493, y: 1, z: 6.5674324}
+  m_Center: {x: 0.2083864, y: -0.0000000017538806, z: -3.649847}
 --- !u!1 &3305767945748174691
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,8 +340,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.501888, y: 1, z: 6.6776876}
-  m_Center: {x: 0.084817044, y: 9.405936e-10, z: -3.8870902}
+  m_Size: {x: 3.2043767, y: 1, z: 6.359311}
+  m_Center: {x: -0.06393825, y: -6.06184e-11, z: -4.0462785}
 --- !u!1 &3606710310638026761
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,8 +441,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.4983225, y: 1, z: 17.181862}
-  m_Center: {x: -0.17153011, y: -0.0000000019610988, z: 1.5662613}
+  m_Size: {x: 2.978174, y: 1, z: 16.120533}
+  m_Center: {x: -0.14560328, y: -8.683645e-10, z: 1.5340843}
 --- !u!1 &4070024407138209750
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,8 +519,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5050335, y: 1, z: 6.8670235}
-  m_Center: {x: -0.049822807, y: 1.8015353e-16, z: 29.113691}
+  m_Size: {x: 3.2557766, y: 1, z: 6.576046}
+  m_Center: {x: -0.17445135, y: -7.027464e-16, z: 29.25918}
 --- !u!1 &4278906563601388745
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,8 +620,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.8231106, y: 1, z: 6.903183}
-  m_Center: {x: -0.56223106, y: -8.843583e-16, z: 36.503433}
+  m_Size: {x: 3.1991537, y: 1, z: 6.6434402}
+  m_Center: {x: -0.2502525, y: -3.5888786e-18, z: 36.633305}
 --- !u!1 &4400981026573345021
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,8 +759,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.4099877, y: 1, z: 5.82098}
-  m_Center: {x: -0.21569727, y: 0.000000006199464, z: 17.716478}
+  m_Size: {x: 2.9516752, y: 1, z: 5.3667336}
+  m_Center: {x: -0.1761717, y: 0.0000000012018297, z: 17.727276}
 --- !u!1 &5285422387128897411
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,8 +803,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5622287, y: 1, z: 6.6099415}
-  m_Center: {x: -0.040409803, y: 0, z: 0.061228752}
+  m_Size: {x: 3.2002022, y: 1, z: 6.0503597}
+  m_Center: {x: 0.14060342, y: 0, z: -0.21856213}
 --- !u!1 &5545403122108202718
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,8 +904,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.6415625, y: 1, z: 23.792854}
-  m_Center: {x: -0.09991025, y: 0.000000003172357, z: 11.396427}
+  m_Size: {x: 2.9472673, y: 1, z: 23.28989}
+  m_Center: {x: -0.2540193, y: -5.0821214e-10, z: 11.144945}
 --- !u!1 &7667596197305758784
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,8 +1005,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.4295504, y: 1, z: 10.542995}
-  m_Center: {x: -0.24956974, y: 5.4391158e-11, z: 4.7714977}
+  m_Size: {x: 2.8782518, y: 1, z: 9.634075}
+  m_Center: {x: -0.22330712, y: 0.0000000033750522, z: 5.225958}
 --- !u!1 &9044268330163911466
 GameObject:
   m_ObjectHideFlags: 0

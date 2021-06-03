@@ -42,8 +42,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5548973, y: 1, z: 5.8586903}
-  m_Center: {x: -0.14324258, y: -7.688685e-10, z: 2.4293447}
+  m_Size: {x: 3.1277256, y: 1, z: 5.2069516}
+  m_Center: {x: 0.070343606, y: 3.3058378e-10, z: 2.4553978}
 --- !u!1 &872835618452563452
 GameObject:
   m_ObjectHideFlags: 0
@@ -86,8 +86,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.6415625, y: 1, z: 6.609501}
-  m_Center: {x: -0.09991025, y: -0.000000003172357, z: 17.93551}
+  m_Size: {x: 2.917772, y: 1, z: 6.266552}
+  m_Center: {x: -0.1483147, y: -0.000000002320426, z: 18.106985}
 --- !u!1 &1160316916359051758
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,8 +187,6 @@ Transform:
   - {fileID: 7434191187119193845}
   - {fileID: 5636520503252226383}
   - {fileID: 534638514453985017}
-  - {fileID: 2091968415853559334}
-  - {fileID: 5816397216795400140}
   - {fileID: 7107045233098770057}
   m_Father: {fileID: 7250431051717087893}
   m_RootOrder: 12
@@ -235,8 +233,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.6415625, y: 1, z: 18.244236}
-  m_Center: {x: -0.099910244, y: -0.0000000010574532, z: 8.622118}
+  m_Size: {x: 2.953744, y: 1, z: 17.86695}
+  m_Center: {x: -0.05924081, y: -1.3736412e-10, z: 8.433475}
 --- !u!1 &2348990016121112777
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,50 +322,6 @@ Transform:
   m_Father: {fileID: 7250431051717087893}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3100077310014596612
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2091968415853559334}
-  - component: {fileID: 4770838110017744575}
-  m_Layer: 9
-  m_Name: Buraco9
-  m_TagString: Buraco
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &2091968415853559334
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3100077310014596612}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -3.98, y: 0.49, z: 23.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5833656429535429957}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!65 &4770838110017744575
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3100077310014596612}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.7782793, y: 1, z: 17.000063}
-  m_Center: {x: -0.5846467, y: -1.2029037e-15, z: 8.479039}
 --- !u!1 &3396578318643905217
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,50 +387,6 @@ MonoBehaviour:
   - {fileID: 3733028012330102308}
   - {fileID: 4733693487390787257}
   - {fileID: 4718639577353003484}
---- !u!1 &3496201464080244749
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5816397216795400140}
-  - component: {fileID: 2571881550192693399}
-  m_Layer: 9
-  m_Name: Buraco10
-  m_TagString: Buraco
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &5816397216795400140
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3496201464080244749}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 3.74, y: 0.49, z: 23.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5833656429535429957}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!65 &2571881550192693399
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3496201464080244749}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.7782793, y: 1, z: 4.1616535}
-  m_Center: {x: -0.5846467, y: -1.2029037e-15, z: 7.949189}
 --- !u!1 &3733028012330102308
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,7 +489,7 @@ GameObject:
   - component: {fileID: 7107045233098770057}
   - component: {fileID: 8677844975764395122}
   m_Layer: 9
-  m_Name: Buraco11
+  m_Name: Buraco9
   m_TagString: Buraco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -597,7 +507,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5833656429535429957}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &8677844975764395122
 BoxCollider:
@@ -610,8 +520,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.4766626, y: 1, z: 5.8490744}
-  m_Center: {x: -0.06457472, y: 0, z: 1.6440511}
+  m_Size: {x: 2.8637466, y: 1, z: 5.1854763}
+  m_Center: {x: -0.09145737, y: 0, z: 1.716774}
 --- !u!1 &4718639577353003484
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,8 +632,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.6415625, y: 1, z: 26.73613}
-  m_Center: {x: -0.09991026, y: 3.5654624e-16, z: 12.74128}
+  m_Size: {x: 2.6757863, y: 1, z: 25.269608}
+  m_Center: {x: -0.073336124, y: -1.539908e-16, z: 12.860981}
 --- !u!1 &5683679529679901207
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,8 +676,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.6415625, y: 1, z: 5.707694}
-  m_Center: {x: -0.09991026, y: 0, z: 1.7147412}
+  m_Size: {x: 3.0739844, y: 1, z: 5.2653103}
+  m_Center: {x: -0.09603107, y: 0, z: 1.681056}
 --- !u!1 &5755956831693995294
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,8 +777,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.6415625, y: 1, z: 5.8362484}
-  m_Center: {x: -0.09991025, y: -0.000000003172357, z: 2.4591017}
+  m_Size: {x: 3.2863123, y: 1, z: 5.2022953}
+  m_Center: {x: -0.27753517, y: -0.000000007055137, z: 2.4954653}
 --- !u!1 &6437451306887589562
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,8 +878,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5622287, y: 1, z: 3.7628613}
-  m_Center: {x: -0.040409803, y: 0, z: 1.674573}
+  m_Size: {x: 3.1610236, y: 1, z: 3.4130058}
+  m_Center: {x: -0.014095068, y: 0, z: 1.6931591}
 --- !u!1 &7736508247458303862
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,8 +922,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.7782793, y: 1, z: 33.134224}
-  m_Center: {x: -0.5846467, y: -1.2029037e-15, z: 23.481586}
+  m_Size: {x: 2.9289753, y: 1, z: 32.588593}
+  m_Center: {x: -0.4216752, y: 1.1130606e-15, z: 23.754402}
 --- !u!1 &8610656126019412487
 GameObject:
   m_ObjectHideFlags: 0
