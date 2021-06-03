@@ -78,14 +78,12 @@ public class TutorialPista : MonoBehaviour
                         case TouchPhase.Began:
                             tocando = true;
                             posToqueIniX = Input.GetTouch(0).position.x;
-                            Debug.Log("comecou");
                             Debug.Log(Input.touchCount);
                             break;
 
                         case TouchPhase.Ended:
                             posToqueFinX = Input.GetTouch(0).position.x;
                             tocando = false;
-                            Debug.Log("terminou");
                             if (posToqueFinX < posToqueIniX)
                             {
                                 Time.timeScale = 1;

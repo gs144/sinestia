@@ -889,7 +889,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.24733336, y: 0.032666665}
   m_AnchorMax: {x: 0.7538958, y: 0.20548147}
-  m_AnchoredPosition: {x: -0.9999695, y: 0}
+  m_AnchoredPosition: {x: -1, y: 0}
   m_SizeDelta: {x: -3.4680176, y: -5.3603516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &236932827
@@ -1341,7 +1341,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 305078470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b589cc55b1f890b46891caa0c8a184e1, type: 3}
+  m_Script: {fileID: 11500000, guid: 660a47e7f758594468e61912014c499a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tela: {fileID: 1700193242}
@@ -3027,7 +3027,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 793937713}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b589cc55b1f890b46891caa0c8a184e1, type: 3}
+  m_Script: {fileID: 11500000, guid: 0323d9a8da7ab4f4a924ebcead9ae8c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tela: {fileID: 1086133858}
@@ -3486,7 +3486,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 869910624}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b589cc55b1f890b46891caa0c8a184e1, type: 3}
+  m_Script: {fileID: 11500000, guid: 127389b7a2d811447abbf954e9f6baf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tela: {fileID: 399062762}
@@ -4496,7 +4496,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1233911587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b589cc55b1f890b46891caa0c8a184e1, type: 3}
+  m_Script: {fileID: 11500000, guid: 85d0b104d5592194b9526bf2d1e84189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tela: {fileID: 1463589522}
@@ -5388,7 +5388,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1530947016}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.703392, y: -18.026546, z: 7.1}
+  m_LocalPosition: {x: 3.703392, y: -18.026546, z: 16.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1757296121}
