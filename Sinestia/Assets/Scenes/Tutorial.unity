@@ -1393,12 +1393,12 @@ GameObject:
   - component: {fileID: 305078472}
   - component: {fileID: 305078471}
   - component: {fileID: 305078473}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &305078471
 BoxCollider:
@@ -3287,12 +3287,12 @@ GameObject:
   - component: {fileID: 793937715}
   - component: {fileID: 793937714}
   - component: {fileID: 793937716}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Esquerda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &793937714
 BoxCollider:
@@ -3898,12 +3898,12 @@ GameObject:
   - component: {fileID: 869910626}
   - component: {fileID: 869910625}
   - component: {fileID: 869910627}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Buraco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &869910625
 BoxCollider:
@@ -4730,12 +4730,12 @@ GameObject:
   - component: {fileID: 1233911589}
   - component: {fileID: 1233911588}
   - component: {fileID: 1233911590}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Desliza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1233911588
 BoxCollider:
@@ -8008,12 +8008,12 @@ GameObject:
   - component: {fileID: 1753794598}
   - component: {fileID: 1753794597}
   - component: {fileID: 1753794599}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Direita
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1753794597
 BoxCollider:
