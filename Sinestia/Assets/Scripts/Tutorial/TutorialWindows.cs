@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class TutorialWindows : MonoBehaviour
 {
@@ -37,6 +38,16 @@ public class TutorialWindows : MonoBehaviour
             tela.SetActive(true);
             PlayerTutorial.player.baixo = true;
             ControleColisao.cont.baixoPronto = true;
+        }
+        else if(TutorialPista.tutorialPista.buraco == false && ControleColisao.cont.buracoPronto == false)
+        {
+            TutorialPista.tutorialPista.buraco = true;
+            ControleColisao.cont.buracoPronto = true;
+            tela.SetActive(true);
+        }
+        else
+        {
+            SceneManager.LoadScene("Main Menu");
         }
 
 
