@@ -10,49 +10,95 @@ public class TutorialPista : MonoBehaviour
     Vector3 rotation = new Vector3(0, 0, 45.0f);
     private float posToqueIniX, posToqueFinX;
     private bool tocando = false;
+    public bool direita = false, esquerda = false, cima = false, baixo = false;
+    public static TutorialPista tutorialPista;
+    void Start()
+    {
+        tutorialPista = this;
+    }
     void Update()
     {
+        gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(goalRotation), Time.time * speed);
+        if (direita == true)
+        {
+
 #if UNITY_EDITOR
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            goalRotation -= rotation;
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            goalRotation += rotation;
-            // gira.Rotate(0.0f, 0.0f, -45.0f, Space.World);
-        }
+            if (Input.GetKeyDown(KeyCode.A))
+                {
+                    goalRotation += rotation;
+                    direita = false;
+                    Time.timeScale = 1;
+                }
 #endif
 #if UNITY_ANDROID
-        if (Input.touchCount > 0)
-        {
-            Touch toque = Input.GetTouch(0);
-            switch (toque.phase)
-            {
-                case TouchPhase.Began:
-                    tocando = true;
-                    posToqueIniX = Input.GetTouch(0).position.x;
-                    Debug.Log("comecou");
-                    Debug.Log(Input.touchCount);
-                    break;
+            if (Input.touchCount > 0)
+                {
+                    Touch toque = Input.GetTouch(0);
+                    switch (toque.phase)
+                    {
+                        case TouchPhase.Began:
+                            tocando = true;
+                            posToqueIniX = Input.GetTouch(0).position.x;
+                            Debug.Log("comecou");
+                            Debug.Log(Input.touchCount);
+                            break;
 
-                case TouchPhase.Ended:
-                    posToqueFinX = Input.GetTouch(0).position.x;
-                    tocando = false;
-                    Debug.Log("terminou");
-                    if (posToqueFinX > posToqueIniX)
-                    {
-                        goalRotation += rotation;
+                        case TouchPhase.Ended:
+                            posToqueFinX = Input.GetTouch(0).position.x;
+                            tocando = false;
+                            Debug.Log("terminou");
+                            if (posToqueFinX > posToqueIniX)
+                            {
+                                Time.timeScale = 1;
+                                goalRotation += rotation;
+                                direita = false;
+                            }
+                            break;
                     }
-                    if (posToqueFinX < posToqueIniX)
-                    {
-                        goalRotation -= rotation;
                     }
-                    break;
-            }
+#endif
         }
 
+        if (esquerda == true)
+        {
+#if UNITY_EDITOR
+         if (Input.GetKeyDown(KeyCode.D))
+                {
+                    goalRotation -= rotation;
+                    esquerda = false;
+                    Time.timeScale = 1;
+                }
 #endif
-        gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(goalRotation), Time.time * speed);
+#if UNITY_ANDROID
+                if (Input.touchCount > 0)
+                {
+                    Touch toque = Input.GetTouch(0);
+                    switch (toque.phase)
+                    {
+                        case TouchPhase.Began:
+                            tocando = true;
+                            posToqueIniX = Input.GetTouch(0).position.x;
+                            Debug.Log("comecou");
+                            Debug.Log(Input.touchCount);
+                            break;
+
+                        case TouchPhase.Ended:
+                            posToqueFinX = Input.GetTouch(0).position.x;
+                            tocando = false;
+                            Debug.Log("terminou");
+                            if (posToqueFinX < posToqueIniX)
+                            {
+                                Time.timeScale = 1;
+                                goalRotation -= rotation;
+                                esquerda = false;
+                            }
+                            break;
+                    }
+                    }
+#endif
+            // gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(goalRotation), Time.time * speed);
+        }
+
     }
 }
+

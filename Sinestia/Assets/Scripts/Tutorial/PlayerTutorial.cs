@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Player : MonoBehaviour
+public class PlayerTutorial : MonoBehaviour
 {
-    static public Player player;
+    static public PlayerTutorial player;
     static Animator anim;
     Vector3 anda = new Vector3(0, 0, 1);
     int cont;
@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     private static int pontos = 0;
     public bool shield = false;
     public Renderer text_costas;
+    public bool cima = false, baixo = false;
 
     void Awake()
     {
@@ -35,14 +36,14 @@ public class Player : MonoBehaviour
     void Update()
     {
         Viver();
+        if (cima == true)
+        {
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.X))
         {
             Pulo();
-        }
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            Deslizar();
+            Debug.Log("oulou");
+            Time.timeScale = 1;
         }
 #endif
 #if UNITY_ANDROID
@@ -60,15 +61,45 @@ public class Player : MonoBehaviour
                 if (posToqueFin > posToqueIni)
                 {
                     Pulo();
+                    Time.timeScale = 1;
                 }
+                }
+        }
+
+        
+#endif
+        }
+        if (baixo == true)
+            {
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            Deslizar();
+            Time.timeScale = 1;
+        }
+#endif
+#if UNITY_ANDROID
+        if (Input.touchCount > 0)
+        {
+            if (Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                posToqueIni = Input.GetTouch(0).position.y;
+
+            }
+            if (Input.GetTouch(0).phase == TouchPhase.Ended)
+            {
+                posToqueFin = Input.GetTouch(0).position.y;
+                Debug.Log(posToqueFin);
                 if (posToqueFin < posToqueIni)
                 {
                     Deslizar();
+                    Time.timeScale = 1;
                 }
             }
         }
 
 #endif
+        }
     }
 
     void Movimenta()
