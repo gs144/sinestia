@@ -464,7 +464,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 18.8}
+  m_AnchoredPosition: {x: 0, y: 18.800049}
   m_SizeDelta: {x: -871.0967, y: -392.56842}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &451197218
@@ -1028,9 +1028,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Time\nArtur Augusto de Oliveira Santos,  Ot\xE1vio Oliveira Biavati Pereira\n\nAgradecimentos\nJosemar\nMaristela
     de Oliveira\nJo\xE3o Carlos Pereira\nAndreisa Jacinto de Oliveira Santos\nAlessandro
-    Augusto dos Santos\nAna Luiza de Oliveira Santos\nSamuel Peixoto de Oliveira\nAdler\nHiago\nLuz\nPoldo\nPedro\nAdler
-    Melga\xE7o\nGeminimax pela trilha sonora\nAos professores e colegas do curso\n\nJogos
-    Digitais PUC Minas"
+    Augusto dos Santos\nAna Luiza de Oliveira Santos\nSamuel Peixoto de Oliveira\nAdler\nAstolfo\nHiago\nLuz\nPoldo\nPedro\nAdler
+    Melga\xE7o\nGeminimax pela trilha sonora\nAos professores e colegas do curso\n\nObrigado
+    por jogar\n\nJogos Digitais PUC Minas"
 --- !u!222 &1929483263
 CanvasRenderer:
   m_ObjectHideFlags: 0
