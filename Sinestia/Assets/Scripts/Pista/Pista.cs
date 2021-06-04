@@ -53,11 +53,11 @@ public class Pista : MonoBehaviour
                 case TouchPhase.Ended:
                     posToqueFinX = Input.GetTouch(0).position.x;
                     tocando = false;
-                    if (posToqueFinX > posToqueIniX)    
+                    if (posToqueFinX - posToqueIniX>200)    
                     {
                         goalRotation += rotation;
                     }
-                    if (posToqueFinX < posToqueIniX)
+                    if (posToqueFinX - posToqueIniX<-200)
                     {
                         goalRotation -= rotation;
                     }

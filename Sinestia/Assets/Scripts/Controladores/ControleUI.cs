@@ -40,6 +40,10 @@ public class ControleUI : MonoBehaviour
         {
             Time.timeScale = 1;
         }
+        if (Player.player.Pontos != 0)
+        {
+            Player.player.Pontos = 0;
+        }
 
     }
     public void Open()

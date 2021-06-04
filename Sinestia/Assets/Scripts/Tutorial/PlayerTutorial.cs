@@ -42,7 +42,7 @@ public class PlayerTutorial : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.X))
         {
             Pulo();
-            Debug.Log("oulou");
+            cima=false;
             Time.timeScale = 1;
         }
 #endif
@@ -61,6 +61,7 @@ public class PlayerTutorial : MonoBehaviour
                 if (posToqueFin > posToqueIni)
                 {
                     Pulo();
+                    cima=false;
                     Time.timeScale = 1;
                 }
                 }
@@ -75,6 +76,7 @@ public class PlayerTutorial : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             Deslizar();
+            baixo=false;
             Time.timeScale = 1;
         }
 #endif
@@ -93,6 +95,7 @@ public class PlayerTutorial : MonoBehaviour
                 if (posToqueFin < posToqueIni)
                 {
                     Deslizar();
+                    baixo=false;
                     Time.timeScale = 1;
                 }
             }
