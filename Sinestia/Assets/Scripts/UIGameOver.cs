@@ -29,6 +29,6 @@ public class UIGameOver : MonoBehaviour
         rankingEntryData.entryName = nome.text;
         rankingEntryData.entryScore = GameController.game.pontosJogador;
         ranking.AddEntry(rankingEntryData);
-
+        
     }
 }

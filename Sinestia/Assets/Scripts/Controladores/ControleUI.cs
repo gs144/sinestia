@@ -88,5 +88,8 @@ public class ControleUI : MonoBehaviour
     {
         GameController.game.PersonagemSelecionado = selecionado ;
     }
-   
+    public void GameOverButton()
+    {
+        this.gameObject.SetActive(false);
+    }
 }
