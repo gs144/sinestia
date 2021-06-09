@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour
     public int pontosJogador;
     static public GameController game;
     public string PersonagemSelecionado = "P1";
+    public bool Pausado = false;
     void Awake()
     {
         if (game == null)

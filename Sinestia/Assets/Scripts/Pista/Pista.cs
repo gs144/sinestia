@@ -28,8 +28,8 @@ public class Pista : MonoBehaviour
     }
     void Update()
     {
-        if (Time.timeScale == 1)
-        {
+       
+       
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.D))
         {
@@ -39,6 +39,7 @@ public class Pista : MonoBehaviour
         {
             goalRotation += rotation;
         }
+        
 #endif
 #if UNITY_ANDROID
         if (Input.touchCount > 0)
@@ -47,13 +48,15 @@ public class Pista : MonoBehaviour
             switch (toque.phase)
             {
                 case TouchPhase.Began:
-                    tocando = true;
+                    tocando = true;   
                     posToqueIniX = Input.GetTouch(0).position.x;
                     break;
-                case TouchPhase.Ended:
+                case TouchPhase.Ended:  
+                tocando = false;
+                posToqueFinX =posToqueIniX;         
                     posToqueFinX = Input.GetTouch(0).position.x;
                     tocando = false;
-                    if (posToqueFinX - posToqueIniX>200)    
+                    if (posToqueFinX - posToqueIniX>200)
                     {
                         goalRotation += rotation;
                     }
@@ -61,14 +64,14 @@ public class Pista : MonoBehaviour
                     {
                         goalRotation -= rotation;
                     }
-                    break;
+                    break;    
             }
         }
 
 #endif
-
-            gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(goalRotation), Time.time * speed);
-        }
+            gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(goalRotation), Time.time * speed* Time.timeScale);
+        
+        
     }
     void PowerUp()
     {

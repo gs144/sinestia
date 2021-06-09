@@ -12,6 +12,7 @@ public class ControleUI : MonoBehaviour
     public AudioMixer mixer;
     public string cena;
     public GameObject tela;
+    public GameObject seta1, seta2;
     public AudioSource Som;
     public Button P1, P2;
     public void SfxChange()
@@ -56,6 +57,7 @@ public class ControleUI : MonoBehaviour
     }
     public void Pausa()
     {
+        GameController.game.Pausado = true;
         tela.SetActive(true);
         Time.timeScale = 0;
         Som.Play();
@@ -64,6 +66,7 @@ public class ControleUI : MonoBehaviour
     {
         Som.Play();
         Invoke("Fechar", 0.1f);
+        GameController.game.Pausado = false;
         Time.timeScale = 1;
     }
     void Fechar()
@@ -87,5 +90,16 @@ public class ControleUI : MonoBehaviour
     public void GameOverButton()
     {
         this.gameObject.SetActive(false);
+    }
+    public void Seta()
+    {
+        if(GameController.game.PersonagemSelecionado == "P1")
+        {
+            seta1.SetActive(true);
+        }
+        if (GameController.game.PersonagemSelecionado == "P2")
+        {
+            seta2.SetActive(true);
+        }
     }
 }
