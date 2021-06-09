@@ -91,15 +91,17 @@ public class ControleUI : MonoBehaviour
     {
         this.gameObject.SetActive(false);
     }
-    public void Seta()
+    public void Update()
     {
         if(GameController.game.PersonagemSelecionado == "P1")
         {
             seta1.SetActive(true);
+            seta2.SetActive(false);
         }
         if (GameController.game.PersonagemSelecionado == "P2")
         {
             seta2.SetActive(true);
+            seta1.SetActive(false);
         }
     }
 }
