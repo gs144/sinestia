@@ -12,6 +12,7 @@ public class ControleUI : MonoBehaviour
     public AudioMixer mixer;
     public string cena;
     public GameObject tela;
+    public GameObject seta1, seta2;
     public AudioSource Som;
     public Button P1, P2;
     public void SfxChange()
@@ -89,5 +90,16 @@ public class ControleUI : MonoBehaviour
     public void GameOverButton()
     {
         this.gameObject.SetActive(false);
+    }
+    public void Seta()
+    {
+        if(GameController.game.PersonagemSelecionado == "P1")
+        {
+            seta1.SetActive(true);
+        }
+        if (GameController.game.PersonagemSelecionado == "P2")
+        {
+            seta2.SetActive(true);
+        }
     }
 }
