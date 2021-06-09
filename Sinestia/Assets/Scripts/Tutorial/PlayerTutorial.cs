@@ -226,12 +226,10 @@ public class PlayerTutorial : MonoBehaviour
             {
                 pontos = value;
             }
-
             ControleHUD.controleHUD.Pontos(pontos);
             GameController.game.pontosJogador = pontos;
         }
     }
-
     void StartHUD()
     {
         ControleHUD.controleHUD.Vida(vida);

@@ -14,7 +14,6 @@ public class ControleUI : MonoBehaviour
     public GameObject tela;
     public AudioSource Som;
     public Button P1, P2;
-
     public void SfxChange()
     {
         mixer.SetFloat("Sfxvolume", sliderSFX.value);
@@ -44,7 +43,6 @@ public class ControleUI : MonoBehaviour
         {
             Player.player.Pontos = 0;
         }
-
     }
     public void Open()
     {
@@ -53,7 +51,6 @@ public class ControleUI : MonoBehaviour
     }
     public void Close()
     {
-
         Som.Play();
         StartCoroutine(tempo());
     }
@@ -75,7 +72,6 @@ public class ControleUI : MonoBehaviour
     }
     IEnumerator tempo()
     {
-
         yield return new WaitForSecondsRealtime(0.1f);
         tela.SetActive(false);
     }

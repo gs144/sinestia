@@ -10,12 +10,10 @@ public class Procedural : MonoBehaviour
     public List<Pista> PoolPista;
     public int tamanhoPool;
     static public Procedural procedural;
-
     public void GeraPista()
     {
         int Sorteio;
         Pista reaproveitada;
-
         if (PoolPista.Count < tamanhoPool)
         {
             UltimaPeca = Instantiate(ListaPecas[Random.Range(1, ListaPecas.Length)], UltimaPeca.conector.position, UltimaPeca.conector.rotation, this.transform);
@@ -29,7 +27,6 @@ public class Procedural : MonoBehaviour
             reaproveitada.transform.rotation = UltimaPeca.conector.rotation;
             UltimaPeca = reaproveitada;
             PoolPista.RemoveAt(Sorteio);
-
         }
     }
     private void PistaInicial()
@@ -46,6 +43,4 @@ public class Procedural : MonoBehaviour
         PistaInicial();
         procedural = this;
     }
-
-
 }

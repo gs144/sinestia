@@ -9,7 +9,6 @@ public class TutorialWindows : MonoBehaviour
 {
     public GameObject tela;
     public static TutorialWindows tut;
-
     void OnTriggerEnter(Collider outro)
     {
         Time.timeScale = 0;
@@ -23,7 +22,6 @@ public class TutorialWindows : MonoBehaviour
         {
             SceneManager.LoadScene("Main Menu");
         }
-
 
     }
     void Start()

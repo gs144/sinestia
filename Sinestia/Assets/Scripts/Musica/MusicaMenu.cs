@@ -7,7 +7,6 @@ public class MusicaMenu : MonoBehaviour
 {
     private static MusicaMenu instance;
     private Scene scene;
-
     void Awake()
     {
        if (instance == null)
@@ -22,24 +21,16 @@ public class MusicaMenu : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-    }
-
-    
+    }   
     void Update()
     {
-        /*if (musicaMenu != this)
-        {
-            Destroy(this);
-        }*/
         scene = SceneManager.GetActiveScene();
-
         if(scene.name != "Main Menu" && scene.name != "Credits")
         {
             if (scene.name != "Character")
             {
                 Destroy(this.gameObject);
             }
-        }
-        
+        } 
     }
 }

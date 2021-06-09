@@ -6,7 +6,6 @@ using UnityEngine.UI;
     {
         [SerializeField] private Text entryNameText = null;
         [SerializeField] private Text entryScoreText = null;
-
         public void Initialise(RankingEntryData rankingEntryData)
         {
             entryNameText.text = rankingEntryData.entryName;

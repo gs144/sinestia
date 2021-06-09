@@ -7,7 +7,6 @@ public class PlayerInstantiate : MonoBehaviour
     public GameObject P1, P2;
     void Start()
     {
-        Debug.Log(GameController.game.PersonagemSelecionado);
         if (GameController.game.PersonagemSelecionado == "P1")
         {
             Instantiate(P1, transform.position, transform.rotation);
@@ -16,6 +15,5 @@ public class PlayerInstantiate : MonoBehaviour
         {
             Instantiate(P2, transform.position, transform.rotation);
         }
-
     }
 }

@@ -39,8 +39,6 @@ public class TutorialPista : MonoBehaviour
                         case TouchPhase.Began:
                             tocando = true;
                             posToqueIniX = Input.GetTouch(0).position.x;
-                            Debug.Log("comecou");
-                            Debug.Log(Input.touchCount);
                             break;
 
                         case TouchPhase.Ended:
@@ -78,7 +76,6 @@ public class TutorialPista : MonoBehaviour
                         case TouchPhase.Began:
                             tocando = true;
                             posToqueIniX = Input.GetTouch(0).position.x;
-                            Debug.Log(Input.touchCount);
                             break;
 
                         case TouchPhase.Ended:

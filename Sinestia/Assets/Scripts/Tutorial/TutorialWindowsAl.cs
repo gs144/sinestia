@@ -16,12 +16,10 @@ public class TutorialWindowsAl : MonoBehaviour
         }
     }
     void Update()
-    {
-       
+    { 
         if (PlayerTutorial.player.cima == false && ControleColisao.cont.cimaPronto == true)
         {
             tela.SetActive(false);
         }
-       
     }
 }

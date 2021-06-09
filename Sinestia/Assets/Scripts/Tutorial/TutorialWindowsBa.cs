@@ -17,11 +17,9 @@ public class TutorialWindowsBa : MonoBehaviour
     }
     void Update()
     {
-       
         if (PlayerTutorial.player.baixo == false && ControleColisao.cont.baixoPronto == true)
         {
             tela.SetActive(false);
         }
-       
     }
 }

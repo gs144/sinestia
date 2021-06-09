@@ -8,21 +8,6 @@ using UnityEngine;
     {
         public Ranking dados;
         public int score;
-        public string nome;
-        
-
-        void Start()
-        {
-
-        }
-
-
-        void Update()
-        {
-
-        }
-
-        
-        
+        public string nome;   
     }
 

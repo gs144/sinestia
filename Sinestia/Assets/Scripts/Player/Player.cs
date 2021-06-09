@@ -19,7 +19,6 @@ public class Player : MonoBehaviour
     private static int pontos = 0;
     public bool shield = false;
     public Renderer text_costas;
-
     void Awake()
     {
         player = this;
@@ -109,7 +108,6 @@ public class Player : MonoBehaviour
                 Escudo.SetActive(false);
                 shield = false;
                 Vida = Vida;
-
             }
             else
             {
@@ -167,7 +165,6 @@ public class Player : MonoBehaviour
             else
             {
                 vida = value;
-
             }
             ControleHUD.controleHUD.Vida(vida);
         }
@@ -192,12 +189,10 @@ public class Player : MonoBehaviour
             {
                 pontos = value;
             }
-
             ControleHUD.controleHUD.Pontos(pontos);
             GameController.game.pontosJogador = pontos;
         }
     }
-
     void StartHUD()
     {
         ControleHUD.controleHUD.Vida(vida);
