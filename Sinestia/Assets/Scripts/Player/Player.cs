@@ -34,14 +34,19 @@ public class Player : MonoBehaviour
     void Update()
     {
         Viver();
+
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.X))
         {
+        if(Time.timeScale!=0){
             Pulo();
+            }
         }
         if (Input.GetKeyDown(KeyCode.Z))
         {
+        if(Time.timeScale!=0){
             Deslizar();
+            }
         }
 #endif
 #if UNITY_ANDROID
@@ -58,16 +63,21 @@ public class Player : MonoBehaviour
                 Debug.Log(posToqueFin);
                 if (posToqueFin - posToqueIni>200)
                 {
+                if(Time.timeScale!=0){
                     Pulo();
+                    }
                 }
                 if (posToqueFin - posToqueIni<-200)
                 {
+                if(Time.timeScale!=0){
                     Deslizar();
+                    }
                 }
             }
         }
 
 #endif
+
     }
 
     void Movimenta()

@@ -28,11 +28,8 @@ public class Pista : MonoBehaviour
     }
     void Update()
     {
-        if (Time.timeScale == 0){
-            posToqueIniX = posToqueFinX;
-        }
-        if (GameController.game.Pausado == false)
-        {
+       
+       
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.D))
         {
@@ -72,8 +69,8 @@ public class Pista : MonoBehaviour
         }
 
 #endif
-            gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(goalRotation), Time.time * speed);
-        }
+            gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(goalRotation), Time.time * speed* Time.timeScale);
+        
         
     }
     void PowerUp()
