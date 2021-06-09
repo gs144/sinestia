@@ -56,6 +56,7 @@ public class ControleUI : MonoBehaviour
     }
     public void Pausa()
     {
+        GameController.game.Pausado = true;
         tela.SetActive(true);
         Time.timeScale = 0;
         Som.Play();
@@ -64,6 +65,7 @@ public class ControleUI : MonoBehaviour
     {
         Som.Play();
         Invoke("Fechar", 0.1f);
+        GameController.game.Pausado = false;
         Time.timeScale = 1;
     }
     void Fechar()
