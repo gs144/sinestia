@@ -930,7 +930,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gira: {fileID: 4174140467315691337}
-  speed: 0.01
   conector: {fileID: 2178902304770766753}
   PowerUp_List:
   - {fileID: 2783222445940328082}
@@ -1024,8 +1023,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.1906757, y: 0.84408474, z: 7.060951}
-  m_Center: {x: -0.011771381, y: -0.07795763, z: 3.4821825}
+  m_Size: {x: 3.1906757, y: 1.0511227, z: 7.060951}
+  m_Center: {x: -0.0117714405, y: 0.025561312, z: 3.4821825}
 --- !u!1001 &393621826404920727
 PrefabInstance:
   m_ObjectHideFlags: 0
