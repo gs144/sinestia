@@ -5,8 +5,8 @@ using UnityEngine;
 public class Pista : MonoBehaviour
 {
     public Transform gira;
-    public float speed = 1000f;
-    Vector3 goalRotation = new Vector3(0, 0, 0);
+    float speed = 10f;
+    //Vector3 goalRotation = new Vector3(0, 0, 0);
     Vector3 rotation = new Vector3(0, 0, 45.0f);
     public Transform conector;
     public GameObject[] PowerUp_List;
@@ -16,7 +16,7 @@ public class Pista : MonoBehaviour
     private void OnEnable()
     {
         PowerUp();
-        goalRotation = Procedural.procedural.UltimaPeca.conector.rotation.eulerAngles;
+        //goalRotation = Procedural.procedural.UltimaPeca.conector.rotation.eulerAngles;
     }
     private void OnDisable()
     {
@@ -28,16 +28,16 @@ public class Pista : MonoBehaviour
     }
     void Update()
     {
-       
-       
+
+
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.D))
         {
-            goalRotation -= rotation;
+            ControladorPista.controladorPista.goalRotation -= rotation;
         }
         if (Input.GetKeyDown(KeyCode.A))
         {
-            goalRotation += rotation;
+            ControladorPista.controladorPista.goalRotation += rotation;
         }
         
 #endif
@@ -58,18 +58,18 @@ public class Pista : MonoBehaviour
                     tocando = false;
                     if (posToqueFinX - posToqueIniX>200)
                     {
-                        goalRotation += rotation;
+                        ControladorPista.controladorPista.goalRotation += rotation;
                     }
                     if (posToqueFinX - posToqueIniX<-200)
                     {
-                        goalRotation -= rotation;
+                        ControladorPista.controladorPista.goalRotation -= rotation;
                     }
                     break;    
             }
         }
 
 #endif
-            gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(goalRotation), Time.time * speed* Time.timeScale);
+        gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(ControladorPista.controladorPista.goalRotation/12), Time.deltaTime * speed* Time.timeScale);
         
         
     }

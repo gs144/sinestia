@@ -657,6 +657,8 @@ MonoBehaviour:
   mixer: {fileID: 0}
   cena: Main Menu
   tela: {fileID: 0}
+  seta1: {fileID: 0}
+  seta2: {fileID: 0}
   Som: {fileID: 213772289}
   P1: {fileID: 0}
   P2: {fileID: 0}
@@ -1391,6 +1393,8 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: a2a32e2b1d4cdd5459fb736ebf7c6756, type: 2}
   cena: 
   tela: {fileID: 0}
+  seta1: {fileID: 0}
+  seta2: {fileID: 0}
   Som: {fileID: 0}
   P1: {fileID: 0}
   P2: {fileID: 0}
@@ -1888,6 +1892,8 @@ MonoBehaviour:
   mixer: {fileID: 0}
   cena: 
   tela: {fileID: 267753089}
+  seta1: {fileID: 0}
+  seta2: {fileID: 0}
   Som: {fileID: 635300477}
   P1: {fileID: 0}
   P2: {fileID: 0}
@@ -2285,6 +2291,8 @@ MonoBehaviour:
   mixer: {fileID: 0}
   cena: 
   tela: {fileID: 1290403001}
+  seta1: {fileID: 0}
+  seta2: {fileID: 0}
   Som: {fileID: 784300796}
   P1: {fileID: 0}
   P2: {fileID: 0}
@@ -3287,6 +3295,8 @@ MonoBehaviour:
   mixer: {fileID: 0}
   cena: 
   tela: {fileID: 1290403001}
+  seta1: {fileID: 0}
+  seta2: {fileID: 0}
   Som: {fileID: 1040279281}
   P1: {fileID: 0}
   P2: {fileID: 0}
@@ -3678,6 +3688,8 @@ MonoBehaviour:
   mixer: {fileID: 0}
   cena: 
   tela: {fileID: 267753089}
+  seta1: {fileID: 0}
+  seta2: {fileID: 0}
   Som: {fileID: 1419162903}
   P1: {fileID: 0}
   P2: {fileID: 0}
@@ -4019,6 +4031,8 @@ MonoBehaviour:
   mixer: {fileID: 0}
   cena: 
   tela: {fileID: 77269984}
+  seta1: {fileID: 0}
+  seta2: {fileID: 0}
   Som: {fileID: 1454565545}
   P1: {fileID: 0}
   P2: {fileID: 0}
@@ -4351,6 +4365,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1926843679}
   - component: {fileID: 1926843678}
+  - component: {fileID: 1926843680}
   m_Layer: 0
   m_Name: Pista
   m_TagString: Untagged
@@ -4398,6 +4413,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1926843680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926843677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 232df9e02df8ad24e9997f799bf882da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goalRotation: {x: 0, y: 0, z: 0}
 --- !u!1 &1991772606
 GameObject:
   m_ObjectHideFlags: 0
@@ -4722,6 +4750,8 @@ MonoBehaviour:
   mixer: {fileID: 0}
   cena: 
   tela: {fileID: 77269984}
+  seta1: {fileID: 0}
+  seta2: {fileID: 0}
   Som: {fileID: 2050861264}
   P1: {fileID: 0}
   P2: {fileID: 0}

@@ -262,8 +262,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.1533518, y: 1, z: 6.632984}
-  m_Center: {x: 0.16402864, y: 0, z: -18.167273}
+  m_Size: {x: 3.1533518, y: 1.1746511, z: 6.632984}
+  m_Center: {x: 0.16402864, y: -0.08732572, z: -18.167273}
 --- !u!1 &2122206590942652809
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,7 +1254,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gira: {fileID: 4359445078578233407}
-  speed: 0.01
   conector: {fileID: 1994917107798669527}
   PowerUp_List:
   - {fileID: 6966713205157836062}
