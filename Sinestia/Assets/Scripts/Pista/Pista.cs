@@ -70,7 +70,7 @@ public class Pista : MonoBehaviour
         }
 
 #endif
-        gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(ControladorPista.controladorPista.goalRotation/12), (Time.time-startTime) * speed* Time.timeScale);
+        gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(ControladorPista.controladorPista.goalRotation/12), Time.time * speed* Time.timeScale);
         
         
     }
