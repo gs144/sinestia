@@ -5,18 +5,16 @@ using UnityEngine;
 public class Pista : MonoBehaviour
 {
     public Transform gira;
-    float speed = 10f;
-    //Vector3 goalRotation = new Vector3(0, 0, 0);
+    float speed = 2.0f;
     Vector3 rotation = new Vector3(0, 0, 45.0f);
     public Transform conector;
     public GameObject[] PowerUp_List;
     private float posToqueIniX, posToqueFinX;
     private bool tocando = false;
-
+    private float startTime=0;
     private void OnEnable()
     {
         PowerUp();
-        //goalRotation = Procedural.procedural.UltimaPeca.conector.rotation.eulerAngles;
     }
     private void OnDisable()
     {
@@ -34,10 +32,12 @@ public class Pista : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
         {
             ControladorPista.controladorPista.goalRotation -= rotation;
+            startTime= Time.time;
         }
         if (Input.GetKeyDown(KeyCode.A))
         {
             ControladorPista.controladorPista.goalRotation += rotation;
+            startTime= Time.time;
         }
         
 #endif
@@ -53,6 +53,7 @@ public class Pista : MonoBehaviour
                     break;
                 case TouchPhase.Ended:  
                 tocando = false;
+                startTime= Time.time;
                 posToqueFinX =posToqueIniX;         
                     posToqueFinX = Input.GetTouch(0).position.x;
                     tocando = false;
@@ -69,7 +70,7 @@ public class Pista : MonoBehaviour
         }
 
 #endif
-        gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(ControladorPista.controladorPista.goalRotation/12), Time.deltaTime * speed* Time.timeScale);
+        gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(ControladorPista.controladorPista.goalRotation/12), (Time.time-startTime) * speed* Time.timeScale);
         
         
     }

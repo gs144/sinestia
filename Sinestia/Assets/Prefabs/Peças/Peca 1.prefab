@@ -337,7 +337,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gira: {fileID: 6887216889203696702}
-  speed: 0.01
   conector: {fileID: 8666278069155519702}
   PowerUp_List:
   - {fileID: 5060082174302732920}
