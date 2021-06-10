@@ -6,12 +6,12 @@ public class Pista : MonoBehaviour
 {
     public Transform gira;
     float speed = 2.0f;
-    Vector3 rotation = new Vector3(0, 0, 45.0f);
+    //Vector3 rotation = new Vector3(0, 0, 45.0f);
     public Transform conector;
     public GameObject[] PowerUp_List;
-    private float posToqueIniX, posToqueFinX;
-    private bool tocando = false;
-    private float startTime=0;
+    //private float posToqueIniX, posToqueFinX;
+    //private bool tocando = false;
+    //public float startTime=0;
     private void OnEnable()
     {
         PowerUp();
@@ -26,7 +26,7 @@ public class Pista : MonoBehaviour
     }
     void Update()
     {
-
+/*
 
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.D))
@@ -69,8 +69,9 @@ public class Pista : MonoBehaviour
             }
         }
 
-#endif
-        gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(ControladorPista.controladorPista.goalRotation/12), (Time.time-startTime) * speed* Time.timeScale);
+#endif*/
+        gira.rotation = Quaternion.Lerp(gira.rotation, Quaternion.Euler(ControladorPista.controladorPista.goalRotation), (Time.time - 
+            ControladorPista.controladorPista.startTime) * speed* Time.timeScale);
         
         
     }
