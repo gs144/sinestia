@@ -22,12 +22,24 @@ public class ControladorPista : MonoBehaviour
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.D))
         {
-            goalRotation -= rotation;
+            if(GameController.game.Pausado == true){
+                    goalRotation =goalRotation;
+                    }
+            
+                    else{
+                    goalRotation -= rotation;
+                    }
             startTime= Time.time;
         }
         if (Input.GetKeyDown(KeyCode.A))
         {
-            goalRotation += rotation;
+            if(GameController.game.Pausado == true){
+                    goalRotation =goalRotation;
+                    }
+            
+                    else{
+                    goalRotation += rotation;
+                    }
             startTime= Time.time;
         }
         
@@ -48,11 +60,13 @@ public class ControladorPista : MonoBehaviour
                 posToqueFinX =posToqueIniX;         
                     posToqueFinX = Input.GetTouch(0).position.x;
                     tocando = false;
-                    if (posToqueFinX - posToqueIniX>200)
+                    if(GameController.game.Pausado == true){
+                    goalRotation =goalRotation;}
+                    else if (posToqueFinX - posToqueIniX>200)
                     {
                        goalRotation += rotation;
                     }
-                    if (posToqueFinX - posToqueIniX<-200)
+                    else if (posToqueFinX - posToqueIniX<-200)
                     {
                         goalRotation -= rotation;
                     }
