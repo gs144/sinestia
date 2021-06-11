@@ -35,7 +35,7 @@ public class ControleUI : MonoBehaviour
     {
         Som.Play();
         StartCoroutine(SceneWait());
-        
+
         if (Time.timeScale == 0)
         {
             Time.timeScale = 1;
@@ -43,6 +43,10 @@ public class ControleUI : MonoBehaviour
         if (Player.player.Pontos != 0)
         {
             Player.player.Pontos = 0;
+        }
+        if (GameController.game.Pausado == true)
+        {
+            GameController.game.Pausado = false;
         }
     }
     public void Open()
